@@ -1,0 +1,13 @@
+[
+  {
+    "id": "ornek-kayit",
+    "tip": "resim",
+    "dosyalar": [
+      "medya/ornek.jpg"
+    ],
+    "caption": "Bu bir ornek kayittir. durum alani 'taslak' oldugu icin yayinlanmaz.",
+    "zaman": "2030-01-01T12:00:00+03:00",
+    "durum": "taslak",
+    "sonuc": null
+  }
+]
