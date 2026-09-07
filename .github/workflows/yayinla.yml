@@ -1,0 +1,61 @@
+name: Instagram yayin
+
+on:
+  schedule:
+    # Her saat basi calisir (UTC). Zamani gelen icerikleri yayinlar.
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-yayin
+  cancel-in-progress: false
+
+jobs:
+  yayinla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Yayinciyi calistir
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: python yayinci.py
+
+      - name: Tazelenen token'i Secret'a yaz
+        # Bu adim yalnizca GH_PAT secret'i tanimliysa calisir.
+        # PAT yoksa atlanir; token 60 gunde bir elle yenilenir.
+        if: always() && hashFiles('yeni_token.txt') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "GH_PAT yok, token Secret'a yazilamadi."
+          else
+            gh secret set IG_ACCESS_TOKEN --body "$(cat yeni_token.txt)" --repo "${{ github.repository }}"
+            echo "IG_ACCESS_TOKEN guncellendi."
+          fi
+          rm -f yeni_token.txt
+
+      - name: Kuyruk ve gunlugu isle
+        if: always()
+        run: |
+          rm -f yeni_token.txt
+          if [ -n "$(git status --porcelain kuyruk.json gunluk.md)" ]; then
+            git config user.name "yayin-botu"
+            git config user.email "actions@github.com"
+            git add kuyruk.json gunluk.md
+            git commit -m "yayin: kuyruk guncellendi"
+            git push
+          else
+            echo "Degisiklik yok."
+          fi
