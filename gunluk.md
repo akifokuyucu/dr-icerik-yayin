@@ -46,3 +46,8 @@
 - Token tazelendi, kalan sure ~59 gun.
 -   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
 - Zamani gelmis icerik yok.
+
+## 2026-09-08T21:33:38+00:00
+
+- Token tazelenemedi: API hatasi 400: {"error":{"message":"API access blocked.","type":"OAuthException","code":200,"fbtrace_id":"A_hgB8r42zE1lNU6Qjj893d"}}
+- Zamani gelmis icerik yok.
