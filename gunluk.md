@@ -256,3 +256,8 @@
 
 - Token tazelenemedi: API hatasi 400: {"error":{"message":"API access blocked.","type":"OAuthException","code":200,"fbtrace_id":"A6a3wxCYSmIIqOtH1MOa9B6"}}
 - Zamani gelmis icerik yok.
+
+## 2026-09-15T16:15:21+00:00
+
+- Token tazelenemedi: API hatasi 400: {"error":{"message":"API access blocked.","type":"OAuthException","code":200,"fbtrace_id":"AgvYCKgFc2VCG7fuNFvsr2G"}}
+- Zamani gelmis icerik yok.
