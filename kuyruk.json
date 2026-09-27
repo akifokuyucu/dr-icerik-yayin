@@ -11,9 +11,7 @@
     ],
     "caption": "Göreve yeni başlarken ihtiyacım olan bilgilerin çoğunu hazır bulamadım, kendim derledim. Bu hesap o arşivin dijital hâli.\n\nCerrahpaşa'dan mezun oldum, şu an pratisyen hekimim. Fakültede öğrenci temsilciliği yaparken yaptığım iş de buydu: bilgiyi toplamak, sadeleştirmek, paylaşmak.\n\nBurada üç başlık olacak: tıp eğitimi ve TUS, kariyer ve yurt dışı süreçleri, uluslararası tıp haberleri. Hepsi kaynağıyla.\n\nİlk olarak hangi konuda rehber görmek istersin? Yoruma yaz, ona göre sıralayayım.",
     "zaman": "2026-09-27T11:24+03:00",
-    "durum": "hata",
-    "sonuc": {
-      "hata": "API hatasi 400: {\"error\":{\"message\":\"Media ID is not available\",\"type\":\"OAuthException\",\"code\":9007,\"error_subcode\":2207027,\"is_transient\":false,\"error_user_title\":\"Cannot Publish\",\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"fbtrace_id\":\"AUQzYqOvXLhUKFianDnGEu1\"}}"
-    }
+    "durum": "bekliyor",
+    "sonuc": null
   }
 ]

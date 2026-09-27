@@ -63,8 +63,9 @@ def medya_url(yol):
     return f"{RAW_BASE}/{urllib.parse.quote(yol.lstrip('/'))}"
 
 
-def konteyner_bekle(kimlik, azami=300):
-    """Video konteynerinin islenmesini bekler."""
+def konteyner_bekle(kimlik, azami=300, aralik=10):
+    """Konteynerin (gorsel, video veya carousel) islenmesini bekler.
+    Instagram medyayi indirip islemeden media_publish cagrilirsa 9007 hatasi doner."""
     basladi = time.time()
     while time.time() - basladi < azami:
         durum = istek(kimlik, sorgu={"fields": "status_code,status"})
@@ -73,7 +74,7 @@ def konteyner_bekle(kimlik, azami=300):
             return
         if kod == "ERROR":
             raise RuntimeError(f"Konteyner islenemedi: {durum.get('status')}")
-        time.sleep(10)
+        time.sleep(aralik)
     raise RuntimeError("Konteyner zaman asimina ugradi")
 
 
@@ -110,8 +111,7 @@ def konteyner_olustur(ig_id, kayit):
             else:
                 alanlar["image_url"] = medya_url(dosya)
             cocuk = istek(f"{ig_id}/media", veri=alanlar)["id"]
-            if video:
-                konteyner_bekle(cocuk)
+            konteyner_bekle(cocuk, aralik=10 if video else 3)
             cocuklar.append(cocuk)
         alanlar = {
             "media_type": "CAROUSEL",
@@ -190,6 +190,7 @@ def main():
         log(f"-> {etiket} ({kayit.get('tip')}) yayinlaniyor")
         try:
             konteyner = konteyner_olustur(ig_id, kayit)
+            konteyner_bekle(konteyner, aralik=3)
             sonuc = istek(f"{ig_id}/media_publish", veri={"creation_id": konteyner})
             kayit["durum"] = "yayinlandi"
             kayit["sonuc"] = {
