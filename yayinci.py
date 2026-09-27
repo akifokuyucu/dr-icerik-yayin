@@ -150,8 +150,10 @@ def token_omru_kontrol():
             log("  yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)")
         if gun < 10:
             log("  !! DIKKAT: token 10 gunden az omurlu. Yenilemeyi kontrol et.")
+        return True
     except Exception as hata:  # noqa: BLE001
         log(f"Token tazelenemedi: {hata}")
+        return False
 
 
 def main():
@@ -167,12 +169,16 @@ def main():
     with open(KUYRUK, encoding="utf-8") as dosya:
         kuyruk = json.load(dosya)
 
-    token_omru_kontrol()
+    # API erisimi yoksa is akisi basarisiz sayilir; GitHub e-postayla haber verir.
+    # (Eskiden hata yutuluyordu ve hat haftalarca sessizce kapali kaldi.)
+    if not token_omru_kontrol():
+        gunluge_yaz()
+        sys.exit("Instagram API'ye erisilemiyor - gunluge bak.")
 
     bekleyen = [k for k in kuyruk if k.get("durum") == "bekliyor" and zamani_geldi(k)]
     if not bekleyen:
-        log("Zamani gelmis icerik yok.")
-        gunluge_yaz()
+        # Gunluge yazilmaz: bos calismalar depoya saatte bir commit uretiyordu.
+        print("Zamani gelmis icerik yok.")
         return
 
     ig_id = hesap_id()
