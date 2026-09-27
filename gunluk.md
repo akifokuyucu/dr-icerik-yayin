@@ -604,3 +604,11 @@
 - Instagram hesap ID: 17841436056636051
 - -> hesabin-tanitimi (carousel) yayinlaniyor
 -    HATA: API hatasi 400: {"error":{"message":"Media ID is not available","type":"OAuthException","code":9007,"error_subcode":2207027,"is_transient":false,"error_user_title":"Cannot Publish","error_user_msg":"The media is not ready for publishing, please wait for a moment","fbtrace_id":"AUQzYqOvXLhUKFianDnGEu1"}}
+
+## 2026-09-27T08:37:05+00:00
+
+- Token tazelendi, kalan sure ~59 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Instagram hesap ID: 17841436056636051
+- -> hesabin-tanitimi (carousel) yayinlaniyor
+-    tamam - media_id 18029040503683203
