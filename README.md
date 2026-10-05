@@ -19,6 +19,7 @@ Instagram'a otomatik icerik yayinlayan kucuk bir sistem. GitHub Actions saat bas
   "tip": "resim",
   "dosyalar": ["medya/tus-kaynak-1.jpg"],
   "caption": "Metin buraya. Hashtagler de burada.",
+  "alt_metinler": ["Kart 1'in erisilebilirlik metni"],
   "zaman": "2026-09-10T19:00:00+03:00",
   "durum": "bekliyor",
   "sonuc": null
@@ -29,6 +30,7 @@ Instagram'a otomatik icerik yayinlayan kucuk bir sistem. GitHub Actions saat bas
 |---|---|
 | `tip` | `resim`, `reels` veya `carousel` |
 | `dosyalar` | `medya/` altindaki dosya yollari. Carousel icin en fazla 10 tane, sirali |
+| `alt_metinler` | Istege bagli. `dosyalar` ile ayni sirada, her gorsel icin Instagram `alt_text` (en fazla 1000 karakter). Videoda kullanilmaz |
 | `zaman` | ISO 8601, saat dilimiyle. Gecmis bir zaman = ilk calismada yayinlanir |
 | `durum` | `bekliyor` yayinlanir · `taslak` beklemede kalir · `yayinlandi` / `hata` motor tarafindan yazilir |
 

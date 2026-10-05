@@ -78,6 +78,13 @@ def konteyner_bekle(kimlik, azami=300, aralik=10):
     raise RuntimeError("Konteyner zaman asimina ugradi")
 
 
+def alt_metin(kayit, sira):
+    """Karta ait erisilebilirlik metni (Instagram alt_text; yalnizca gorsel, en fazla 1000 karakter)."""
+    liste = kayit.get("alt_metinler") or []
+    metin = liste[sira].strip() if sira < len(liste) and liste[sira] else ""
+    return metin[:1000]
+
+
 def konteyner_olustur(ig_id, kayit):
     tip = kayit.get("tip", "resim")
     caption = kayit.get("caption", "")
@@ -87,6 +94,8 @@ def konteyner_olustur(ig_id, kayit):
 
     if tip == "resim":
         alanlar = {"image_url": medya_url(dosyalar[0]), "caption": caption}
+        if alt_metin(kayit, 0):
+            alanlar["alt_text"] = alt_metin(kayit, 0)
         return istek(f"{ig_id}/media", veri=alanlar)["id"]
 
     if tip == "reels":
@@ -102,7 +111,7 @@ def konteyner_olustur(ig_id, kayit):
 
     if tip == "carousel":
         cocuklar = []
-        for dosya in dosyalar[:10]:
+        for sira, dosya in enumerate(dosyalar[:10]):
             video = dosya.lower().endswith((".mp4", ".mov"))
             alanlar = {"is_carousel_item": "true"}
             if video:
@@ -110,6 +119,8 @@ def konteyner_olustur(ig_id, kayit):
                 alanlar["video_url"] = medya_url(dosya)
             else:
                 alanlar["image_url"] = medya_url(dosya)
+                if alt_metin(kayit, sira):
+                    alanlar["alt_text"] = alt_metin(kayit, sira)
             cocuk = istek(f"{ig_id}/media", veri=alanlar)["id"]
             konteyner_bekle(cocuk, aralik=10 if video else 3)
             cocuklar.append(cocuk)

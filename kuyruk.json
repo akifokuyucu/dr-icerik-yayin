@@ -16,5 +16,25 @@
       "media_id": "18029040503683203",
       "tarih": "2026-09-27T08:37:00+00:00"
     }
+  },
+  {
+    "id": "hesabin-tanitimi-3",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/hesabin-tanitimi-3/01.jpg",
+      "medya/hesabin-tanitimi-3/02.jpg",
+      "medya/hesabin-tanitimi-3/03.jpg",
+      "medya/hesabin-tanitimi-3/04.jpg"
+    ],
+    "caption": "Göreve yeni başlarken ihtiyacım olan bilgilerin çoğunu hazır bulamadım, kendim derledim. Bu hesap o arşivin dijital hâli.\n\nCerrahpaşa'dan mezun oldum, şu an pratisyen hekimim. Fakültede öğrenci temsilciliği yaparken yaptığım iş de buydu: bilgiyi toplamak, sadeleştirmek, paylaşmak.\n\nBurada üç başlık var: tıp eğitimi ve TUS, kariyer ve yurt dışı süreçleri, uluslararası tıp haberleri. Her postun kaynağı açıklamasında. Kısa notları Telegram kanallarında da paylaşıyorum.\n\nİlk olarak hangi konuda rehber görmek istersin? Yoruma yaz, ona göre sıralayayım.\n\n#tıpöğrencisi #intörn #pratisyenhekim #tus #usmle",
+    "alt_metinler": [
+      "Bilgiyi kolaylaştır, tıbbı keşfet. Yeni hekim için rehberler. Masasında dizüstü bilgisayarla çalışan doktor karikatürü; yanında TUS, yurt dışı ve haberler ikonları.",
+      "Öncelikle, ben kimim? Ahmet Akif Okuyucu. Cerrahpaşa'dan mezun oldum, şu an pratisyen hekimim. Neden bu hesap? Fakültede öğrenci temsilciliği yaptım; o işin özü bilgiyi toplayıp dağıtmaktı. Burada da aynısını yapıyorum.",
+      "Burada ne var? Göreve başlarken kendim için rehberler, TUS çalışma programları ve sahada pratik notlar hazırladım. Dağıttıkça başkalarının da işine yaradı. Hepsi burada, üç başlıkta. Tıp eğitimi ve TUS: sınavlar, çalışma düzeni, staj ve intörnlük. Kariyer ve yurt dışı: uzmanlık seçimi, USMLE, Almanya ve İngiltere'deki süreçler. Uluslararası tıp haberleri: yeni kılavuzlar ve çalışmalar; ne bulduğu, neyi göstermediği.",
+      "Akılda tutulacak tek şey: Aradığın konu burada yoksa sor; sıradaki rehberi gelen sorulara göre seçeceğim. İlk hangi rehberi görmek istersin? Yoruma yaz."
+    ],
+    "zaman": "2026-10-05T15:40+03:00",
+    "durum": "bekliyor",
+    "sonuc": null
   }
 ]
