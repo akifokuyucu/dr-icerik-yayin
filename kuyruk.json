@@ -39,5 +39,33 @@
       "media_id": "18487215721109289",
       "tarih": "2026-10-05T12:41:09+00:00"
     }
+  },
+  {
+    "id": "doktor-maasi",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/doktor-maasi/01.jpg",
+      "medya/doktor-maasi/02.jpg",
+      "medya/doktor-maasi/03.jpg",
+      "medya/doktor-maasi/04.jpg",
+      "medya/doktor-maasi/05.jpg",
+      "medya/doktor-maasi/06.jpg",
+      "medya/doktor-maasi/07.jpg",
+      "medya/doktor-maasi/08.jpg"
+    ],
+    "caption": "İlk maaş gününde hesabına gelen para, maaşının tamamı olmayabilir. Memur aylığı peşin ödenir, çalışacağın ayın parasını önceden alırsın. Temel ek ödeme, teşvik ve nöbet ücreti ise o ayı ne kadar çalıştığına bağlı; bu yüzden ay kapandıktan sonra hesaplanır ve ayrı yatar.\n\nNöbet için iki not: icap nöbeti, nöbet ücretinin yüzde 40'ı üzerinden ödenir; yoğun bakım, acil ve 112'de tutulan nöbet yüzde 50 artırımlıdır. Aylık 130 saatin üstündeki nöbete ödeme yapılmamasını öngören hükmü Anayasa Mahkemesi iptal etti, karar 10 Mart 2026'da Resmî Gazete'de yayımlandı.\n\nMaaş ve bordroyla ilgili kısa notları Telegram kanalında da paylaşıyorum.\n\nKaynaklar:\n657 sayılı Devlet Memurları Kanunu, md. 164 ve ek md. 33\nSağlık Bakanlığı Ek Ödeme Yönetmeliği, Resmî Gazete 6 Ağustos 2024, sayı 32624\nAnayasa Mahkemesi, E.2025/89, K.2025/243, Resmî Gazete 10 Mart 2026, sayı 33192\n\n#doktormaaşı #nöbetücreti #intörn #yenimezunhekim #tıpöğrencisi",
+    "alt_metinler": [
+      "Maaşın neden tek seferde yatmıyor? Peşin gelen, sonra gelen. Yeni hekimler için. Yanında düşünen doktor karikatürü; takvim ikonunun altında \"Peşin\", saat ikonunun altında \"Sonra\" yazıyor.",
+      "Önce, peşin ne demek? Memur aylığı peşin ödenir, yani çalışacağın ayın parasını önceden alırsın. Neden önemli? Maaşın geri kalanı böyle gelmez. Ek ödeme ve nöbet ücreti o ay ne yaptığına bağlı, bu yüzden ay bitmeden hesaplanamaz.",
+      "Aylık. Memur maaşın; derecene, kademene ve unvanına göre belirlenir. Ne zaman: Peşin, yani o ayı çalışmadan önce. Dört kalem içinde en sabit olanı.",
+      "Temel ek ödeme. Sabit ödeme ile taban ödemenin toplamı. Sabit kısım devlet bütçesinden, taban kısım hastanenin döner sermayesinden, yani kendi hizmet gelirinden gelir. Ne zaman: Ay kapanınca, o ay fiilen çalıştığın gün sayısıyla hesaplanır.",
+      "Teşvik. Performansa bağlı ek ödeme, döner sermayeden gelir. Ne zaman: Ay kapanınca, teşvik puanın ve hastanenin o ayki durumu belli olduktan sonra.",
+      "Nöbet ücreti. Mesai dışında tuttuğun her nöbet saatinin karşılığı. İcap nöbeti, yani evde çağrılmayı beklediğin nöbet, daha düşük oranla ödenir. Ne zaman: Ay kapanınca, o ay tuttuğun nöbet saatleri toplandıktan sonra.",
+      "Bir ayın parası. Aylık peşin gelir. Ay kapanınca hesaplanan: temel ek ödeme (çalıştığın güne göre), teşvik (puanına göre) ve nöbet ücreti (nöbet saatine göre). Sonradan gelen üç kalem, geride kalan ayın karşılığı. Hepsi aynı gün yatmayabilir; ödeme günü hastaneye ve aya göre değişir. Kaynak: 657 sayılı Devlet Memurları Kanunu ve Sağlık Bakanlığı Ek Ödeme Yönetmeliği.",
+      "Akılda tutulacak tek şey: Peşin yatan aylık o ayın parası. Sonra yatan ek ödeme ve nöbet ücreti, geride kalan ayın karşılığı. İlk maaşını bekleyen bir arkadaşına gönder. Son kontrol: 5 Ekim 2026."
+    ],
+    "zaman": "2026-10-07T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null
   }
 ]
