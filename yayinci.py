@@ -3,7 +3,8 @@
 Instagram yayin motoru.
 
 kuyruk.json icindeki zamani gelmis icerikleri Instagram'a yayinlar.
-GitHub Actions tarafindan saatte bir calistirilir.
+GitHub Actions tarafindan saatte bir calistirilir (pratikte 2-8 saatte bir;
+zamani yakin bir post varsa calisma o saate kadar bekler, bkz. BEKLEME_UFKU).
 
 Gerekli ortam degiskenleri:
   IG_ACCESS_TOKEN  - Instagram uzun omurlu erisim token'i (GitHub Secret)
@@ -13,16 +14,22 @@ Gerekli ortam degiskenleri:
 
 import json
 import os
+import subprocess
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 API = "https://graph.instagram.com/v23.0"
 KUYRUK = "kuyruk.json"
 GUNLUK = "gunluk.md"
+
+# GitHub'in saatlik cron'u saat basinda calismiyor; calismalar 2-8 saat arayla geliyor.
+# Bu yuzden zamani bu sure icinde gelecek bir post varsa calisma o saate kadar bekler.
+# Is akisindaki timeout-minutes bu sureden buyuk olmali.
+BEKLEME_UFKU = timedelta(minutes=int(os.environ.get("BEKLEME_DAKIKA", "330")))
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 RAW_BASE = os.environ.get("RAW_BASE", "").strip().rstrip("/")
@@ -134,18 +141,57 @@ def konteyner_olustur(ig_id, kayit):
     raise RuntimeError(f"Bilinmeyen tip: {tip}")
 
 
-def zamani_geldi(kayit):
+def hedef_zaman(kayit):
+    """Kaydin yayin zamani (UTC). Zaman yoksa simdi; bicim gecersizse None."""
     zaman = kayit.get("zaman")
     if not zaman:
-        return True
+        return datetime.now(timezone.utc)
     try:
         hedef = datetime.fromisoformat(zaman)
     except ValueError:
         log(f"  ! gecersiz zaman bicimi: {zaman} - atlaniyor")
-        return False
+        return None
     if hedef.tzinfo is None:
         hedef = hedef.replace(tzinfo=timezone.utc)
-    return hedef <= datetime.now(timezone.utc)
+    return hedef
+
+
+def zamani_geldi(kayit):
+    hedef = hedef_zaman(kayit)
+    return hedef is not None and hedef <= datetime.now(timezone.utc)
+
+
+def kuyrugu_oku():
+    if not os.path.exists(KUYRUK):
+        return None
+    with open(KUYRUK, encoding="utf-8") as dosya:
+        return json.load(dosya)
+
+
+def siradaki_bekle(kuyruk):
+    """Zamani BEKLEME_UFKU icinde gelecek ilk post icin uyur, sonra depoyu tazeler.
+    Bekleme sirasinda kuyruk degismis olabilir (post iptal, saat degisti), o yuzden
+    uyandiktan sonra kuyruk depodan yeniden okunur. Bekleme olduysa True doner."""
+    simdi = datetime.now(timezone.utc)
+    gelecek = [
+        h for k in kuyruk
+        if k.get("durum") == "bekliyor" and (h := hedef_zaman(k)) is not None and h > simdi
+    ]
+    if not gelecek:
+        return False
+    hedef = min(gelecek)
+    if hedef - simdi > BEKLEME_UFKU:
+        print(f"Siradaki post {hedef.isoformat(timespec='minutes')} - bekleme ufkunun disinda.")
+        return False
+
+    saniye = (hedef - simdi).total_seconds() + 5
+    log(f"Siradaki post {hedef.isoformat(timespec='minutes')}: {int(saniye // 60)} dakika beklendi.")
+    time.sleep(saniye)
+
+    cekim = subprocess.run(["git", "pull", "--ff-only", "--quiet"], capture_output=True, text=True)
+    if cekim.returncode != 0:
+        log(f"  ! bekleme sonrasi git pull basarisiz, eldeki kuyrukla devam: {cekim.stderr.strip()[:300]}")
+    return True
 
 
 def token_omru_kontrol():
@@ -173,12 +219,10 @@ def main():
     if not RAW_BASE:
         sys.exit("RAW_BASE tanimli degil.")
 
-    if not os.path.exists(KUYRUK):
+    kuyruk = kuyrugu_oku()
+    if kuyruk is None:
         log("kuyruk.json yok, yapacak is yok.")
         return
-
-    with open(KUYRUK, encoding="utf-8") as dosya:
-        kuyruk = json.load(dosya)
 
     # API erisimi yoksa is akisi basarisiz sayilir; GitHub e-postayla haber verir.
     # (Eskiden hata yutuluyordu ve hat haftalarca sessizce kapali kaldi.)
@@ -187,6 +231,9 @@ def main():
         sys.exit("Instagram API'ye erisilemiyor - gunluge bak.")
 
     bekleyen = [k for k in kuyruk if k.get("durum") == "bekliyor" and zamani_geldi(k)]
+    if not bekleyen and siradaki_bekle(kuyruk):
+        kuyruk = kuyrugu_oku() or []
+        bekleyen = [k for k in kuyruk if k.get("durum") == "bekliyor" and zamani_geldi(k)]
     if not bekleyen:
         # Gunluge yazilmaz: bos calismalar depoya saatte bir commit uretiyordu.
         print("Zamani gelmis icerik yok.")

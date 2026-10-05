@@ -3,6 +3,10 @@
 Instagram'a otomatik icerik yayinlayan kucuk bir sistem. GitHub Actions saat basi calisir,
 `kuyruk.json` icinde zamani gelmis kayitlari Instagram Graph API uzerinden yayinlar.
 
+GitHub saatlik cron'u pratikte 2-8 saatte bir calistiriyor. Bu yuzden bir calisma, zamani
+5,5 saat icinde gelecek bir post gorurse o saate kadar bekler, depoyu yeniden ceker
+(bekleme sirasinda yapilan degisiklikler gecerli olsun diye) ve postu tam saatinde yayinlar.
+
 ## Nasil isler
 
 1. Medya dosyalari `medya/` klasorunde durur. Depo herkese acik oldugu icin bu dosyalarin
@@ -51,4 +55,5 @@ Instagram'a otomatik icerik yayinlayan kucuk bir sistem. GitHub Actions saat bas
 ## Elle calistirma
 
 Actions sekmesi → **Instagram yayin** → **Run workflow**. Kuyrukta zamani gelmis bir sey
-yoksa hicbir sey yapmaz, guvenlidir.
+yoksa hicbir sey yapmaz, guvenlidir. Zamani yakin bir post varsa calisma o saate kadar bekler.
+Baska bir calisma beklerken basilan Run workflow sirada bekler; bu normaldir.

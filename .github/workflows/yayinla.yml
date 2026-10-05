@@ -2,7 +2,8 @@ name: Instagram yayin
 
 on:
   schedule:
-    # Her saat basi calisir (UTC). Zamani gelen icerikleri yayinlar.
+    # Her saat basi istenir (UTC); GitHub pratikte 2-8 saatte bir calistiriyor.
+    # Zamani 5,5 saat icinde gelecek post varsa calisma o saate kadar bekler (yayinci.py, BEKLEME_UFKU).
     - cron: "0 * * * *"
   workflow_dispatch:
 
@@ -16,6 +17,8 @@ concurrency:
 jobs:
   yayinla:
     runs-on: ubuntu-latest
+    # Bekleme (330 dk) + yayin. Siniri asarsa is iptal olur, post bir sonraki calismaya kalir.
+    timeout-minutes: 350
     steps:
       - name: Depoyu al
         uses: actions/checkout@v4
