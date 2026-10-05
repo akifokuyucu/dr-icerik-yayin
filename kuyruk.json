@@ -67,5 +67,33 @@
     "zaman": "2026-10-07T20:00+03:00",
     "durum": "bekliyor",
     "sonuc": null
+  },
+  {
+    "id": "maas-her-ay-farkli",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/maas-her-ay-farkli/01.jpg",
+      "medya/maas-her-ay-farkli/02.jpg",
+      "medya/maas-her-ay-farkli/03.jpg",
+      "medya/maas-her-ay-farkli/04.jpg",
+      "medya/maas-her-ay-farkli/05.jpg",
+      "medya/maas-her-ay-farkli/06.jpg",
+      "medya/maas-her-ay-farkli/07.jpg",
+      "medya/maas-her-ay-farkli/08.jpg"
+    ],
+    "caption": "Aynı nöbeti tutup aynı polikliniği yaptığın iki ayda hesabına farklı tutar yatabilir. Teşvik puanı dışında bunun üç düzenli sebebi var: sabit ödemenin temel ek ödemeden mahsup edilmesi, o ay çalışılmış sayılan gün sayısı ve yıl ilerledikçe yükselen vergi dilimi. En çok gözden kaçanı, yıllık iznin çalışılmış gün sayılmaması.\n\nEk Ödeme Yönetmeliği'ne göre hastanede olmasan da çalışılmış sayılan günler (md. 5): resmî tatiller; idari izin ve nöbet izni; yılda 7 günü geçmeyen kısa süreli hastalık raporları; hakem hastane onaylı heyet raporları; yılda en fazla iki görevlendirmeyle toplam 10 günü geçmeyen yurt içi kongre ve seminerler; görev nedeniyle bulaşıcı hastalık, kaza ya da saldırıya bağlı raporlar. Yıllık izin bu listede yok.\n\nDr. A hayalî bir hekim. Kartlara TL rakamı koymadım, tutarlar unvana, hastaneye ve teşvik puanına göre değişiyor. Maaşın hangi kalemlerden oluştuğunu ve hangisinin ne zaman yattığını bir önceki postta anlattım.\n\nBordroyla ilgili kısa notları Telegram kanalında da paylaşıyorum.\n\nKaynaklar:\nSağlık Bakanlığı Ek Ödeme Yönetmeliği, Resmî Gazete 6 Ağustos 2024, sayı 32624 (md. 4, 5, 6, 12)\n209 sayılı Kanun, ek md. 3\n193 sayılı Gelir Vergisi Kanunu, md. 103\n\n#hekim #pratisyenhekim #dhy #bordro #eködeme",
+    "alt_metinler": [
+      "Aynı işi yaptım, maaşım neden her ay farklı yatıyor? Elinde iki bordro kâğıdıyla şaşkın bakan doktor karikatürü; yanında Mahsup, Gün sayısı ve Vergi dilimi yazan üç ikon.",
+      "Önce, temel ek ödeme ne? Sabit ödeme ile taban ödemenin toplamı. Sabit kısım devlet bütçesinden, taban kısım hastanenin döner sermayesinden gelir ve çalıştığın gün sayısına bağlıdır. Neden önemli? Memur aylığın zam ve kademe dışında her ay aynıdır. Teşvik puanı dışındaki farkın çoğu ek ödemede ve vergide çıkar.",
+      "Mahsup. Sabit ödeme her ay önceden yatar. Ay kapanınca temel ek ödeme hesaplanır ve önceden yatan tutar bundan düşülür, buna mahsup denir. Bordroda iki ayrı kalem görürsün. İkincisi temel ek ödemenin tamamı değil, sabit tutar düşüldükten sonra kalanı.",
+      "Çalışılmış sayılan gün. Taban ödeme, o ay çalışılmış sayılan gün oranında ödenir. Sayılır: resmî tatil, idari izin, nöbet izni, yılda 7 günü geçmeyen rapor. Sayılmaz: yıllık izin ve yıl içinde 7 günü aşan rapor günleri. Bordroda memur aylığın değişmez; düşen kısım taban ödeme, o da çalışılmayan gün oranında. Tam liste açıklamada.",
+      "Vergi dilimi. Gelir vergisi, yıl başından beri biriken kazancın, yani kümülatif matrah üzerinden kesilir. Birikim büyüdükçe üst dilime geçersin. Brüt aynı kalsa da net yıl ilerledikçe azalır. Ocak'ta birikim sıfırlanır, net yeniden yükselir.",
+      "Örnek tablo, Dr. A'nın yılı. Aynı iş yüküyle çalışan hayalî bir hekim. Mart: 2 gün rapor aldı, yılın ilk raporu ve 7 günü geçmediği için çalışılmış sayıldı, kesinti yok. Ağustos: 10 gün yıllık izin kullandı, bu günler çalışılmış sayılmadı ve taban ödeme o oranda düştü; vergi dilimi de yükselmişti, net iki yerden azaldı. Ocak: izin yok, vergi birikimi sıfırlandı, net arttı.",
+      "Bordro kontrol listesi. Yatan tutar değiştiyse sırayla bak: mahsup kalemi, ikinci kalem temel ek ödemenin kalanıdır, tamamı değil; o ayki izin ve rapor günlerin, yıllık izin çalışılmış sayılmaz; yılın kaçıncı ayındasın, yıl ilerledikçe vergi dilimi yükselir. Kaynak: Sağlık Bakanlığı Ek Ödeme Yönetmeliği, 209 sayılı Kanun ve Gelir Vergisi Kanunu.",
+      "Akılda tutulacak tek şey: Yıllık izin planlarken o ayın taban ödemesinin izin günü oranında düşeceğini hesaba kat. Yıllık izin planlayan bir arkadaşına gönder. Son kontrol: 5 Ekim 2026."
+    ],
+    "zaman": "2026-10-09T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null
   }
 ]
