@@ -34,7 +34,10 @@
       "Akılda tutulacak tek şey: Aradığın konu burada yoksa sor; sıradaki rehberi gelen sorulara göre seçeceğim. İlk hangi rehberi görmek istersin? Yoruma yaz."
     ],
     "zaman": "2026-10-05T15:40+03:00",
-    "durum": "bekliyor",
-    "sonuc": null
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18487215721109289",
+      "tarih": "2026-10-05T12:41:09+00:00"
+    }
   }
 ]
