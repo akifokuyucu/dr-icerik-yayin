@@ -65,8 +65,11 @@
       "Akılda tutulacak tek şey: Peşin yatan aylık o ayın parası. Sonra yatan ek ödeme ve nöbet ücreti, geride kalan ayın karşılığı. İlk maaşını bekleyen bir arkadaşına gönder."
     ],
     "zaman": "2026-10-07T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18012496250760752",
+      "tarih": "2026-10-07T17:16:33+00:00"
+    }
   },
   {
     "id": "maas-her-ay-farkli",

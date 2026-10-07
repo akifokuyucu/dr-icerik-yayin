@@ -620,3 +620,11 @@
 - Instagram hesap ID: 17841436056636051
 - -> hesabin-tanitimi-3 (carousel) yayinlaniyor
 -    tamam - media_id 18487215721109289
+
+## 2026-10-07T17:16:38+00:00
+
+- Token tazelendi, kalan sure ~59 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Instagram hesap ID: 17841436056636051
+- -> doktor-maasi (carousel) yayinlaniyor
+-    tamam - media_id 18012496250760752
