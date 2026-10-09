@@ -31,6 +31,8 @@ jobs:
       - name: Yayinciyi calistir
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          # Istege bagli: yayindan sonra Notion Icerik Havuzu kaydini gunceller.
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
           RAW_BASE: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
         run: python yayinci.py
 

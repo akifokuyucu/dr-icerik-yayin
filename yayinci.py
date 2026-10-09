@@ -10,6 +10,11 @@ Gerekli ortam degiskenleri:
   IG_ACCESS_TOKEN  - Instagram uzun omurlu erisim token'i (GitHub Secret)
   RAW_BASE         - medya dosyalarinin herkese acik kok URL'i
                      ornek: https://raw.githubusercontent.com/KULLANICI/DEPO/main
+Istege bagli:
+  NOTION_TOKEN     - Notion entegrasyon token'i (GitHub Secret). Tanimliysa ve kayitta
+                     notion_id varsa, yayindan sonra Icerik Havuzu kaydi guncellenir
+                     (Durum: yayinlandi, Yayin tarihi, Post baglantisi). Notion hatasi
+                     yayini ve kuyrugu etkilemez; yalnizca gunluge yazilir.
 """
 
 import json
@@ -33,6 +38,9 @@ BEKLEME_UFKU = timedelta(minutes=int(os.environ.get("BEKLEME_DAKIKA", "330")))
 
 TOKEN = os.environ.get("IG_ACCESS_TOKEN", "").strip()
 RAW_BASE = os.environ.get("RAW_BASE", "").strip().rstrip("/")
+NOTION_TOKEN = os.environ.get("NOTION_TOKEN", "").strip()
+NOTION_API = "https://api.notion.com/v1"
+NOTION_SURUM = "2022-06-28"
 
 log_satirlari = []
 
@@ -268,10 +276,57 @@ def main():
             json.dump(kuyruk, dosya, ensure_ascii=False, indent=2)
             dosya.write("\n")
 
+    # Kuyruk dosyaya yazildiktan sonra: Notion basarisiz olsa da post "yayinlandi" kalir,
+    # bir sonraki calisma ikinci kez yayinlamaz.
+    for kayit in bekleyen:
+        if kayit.get("durum") == "yayinlandi":
+            notiona_yaz(kayit)
+
     gunluge_yaz()
 
     if any(k.get("durum") == "hata" for k in bekleyen):
         sys.exit("En az bir icerik yayinlanamadi - gunluge bak.")
+
+
+def notion_istek(yol, govde):
+    istek_ = urllib.request.Request(
+        f"{NOTION_API}/{yol}", data=json.dumps(govde).encode(), method="PATCH",
+        headers={"Authorization": f"Bearer {NOTION_TOKEN}", "Notion-Version": NOTION_SURUM,
+                 "Content-Type": "application/json"})
+    try:
+        with urllib.request.urlopen(istek_, timeout=30) as cevap:
+            return json.loads(cevap.read().decode())
+    except urllib.error.HTTPError as hata:
+        raise RuntimeError(f"Notion hatasi {hata.code}: {hata.read().decode(errors='replace')[:300]}") from None
+
+
+def notiona_yaz(kayit):
+    """Yayinlanan postun Icerik Havuzu kaydini gunceller. Hicbir hatasi yayini durdurmaz."""
+    etiket = kayit.get("id", "isimsiz")
+    sayfa = (kayit.get("notion_id") or "").strip()
+    if not sayfa:
+        log(f"   Notion: {etiket} kaydinda notion_id yok, elle guncellenmeli")
+        return
+    if not NOTION_TOKEN:
+        log(f"   Notion: NOTION_TOKEN tanimli degil, {etiket} elle guncellenmeli")
+        return
+    try:
+        sonuc = kayit.get("sonuc") or {}
+        alanlar = {
+            "Durum": {"select": {"name": "yayınlandı"}},
+            "Yayın tarihi": {"date": {"start": sonuc.get("tarih")}},
+        }
+        try:
+            baglanti = istek(str(sonuc.get("media_id")), sorgu={"fields": "permalink"}).get("permalink")
+        except Exception as hata:  # noqa: BLE001
+            baglanti = None
+            log(f"   Notion: post baglantisi alinamadi ({hata})")
+        if baglanti:
+            alanlar["Post bağlantısı"] = {"url": baglanti}
+        notion_istek(f"pages/{sayfa}", {"properties": alanlar})
+        log(f"   Notion: {etiket} -> yayinlandi{' + baglanti' if baglanti else ''}")
+    except Exception as hata:  # noqa: BLE001
+        log(f"   ! Notion guncellenemedi ({etiket}), elle guncellenmeli: {hata}")
 
 
 def gunluge_yaz():
