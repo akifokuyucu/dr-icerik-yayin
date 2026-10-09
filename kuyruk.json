@@ -127,5 +127,32 @@
     "durum": "bekliyor",
     "sonuc": null,
     "notion_id": "3e89ef6b-7120-812d-be9f-e91daaf5b220"
+  },
+  {
+    "id": "dil-tazminati",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/dil-tazminati/01.jpg",
+      "medya/dil-tazminati/02.jpg",
+      "medya/dil-tazminati/03.jpg",
+      "medya/dil-tazminati/04.jpg",
+      "medya/dil-tazminati/05.jpg",
+      "medya/dil-tazminati/06.jpg",
+      "medya/dil-tazminati/07.jpg"
+    ],
+    "caption": "YDS ya da e-YDS'den 70 ve üstü puan aldıysan maaşına her ay yabancı dil tazminatı eklenir. Kartlarda sınavdan bordroya üç adımı sıraladım.\n\nTemmuz–Aralık 2026 için tam tutarlar, damga vergisi düşülmüş hâliyle: A seviyesi 1.329 TL, B seviyesi 938 TL, C seviyesi 547 TL. Hesap, gösterge rakamının (A 850, B 600, C 350) Temmuz 2026 memur maaş katsayısıyla (1,575512) çarpımı. Katsayı Ocak 2027'de yeniden belirlenecek, tutarlar da onunla değişecek.\n\nAynı dilde birden fazla sınava girdiysen en yüksek seviyen esas alınır.\n\nMaaşın hangi kalemlerden oluştuğunu ve neden her ay farklı yattığını anlattığım postlar profilde. Maaş ve bordroyla ilgili kısa notları Telegram kanalında da paylaşıyorum.\n\nKaynaklar:\n375 sayılı Kanun Hükmünde Kararname, md. 2\n8. Dönem Toplu Sözleşme (2026–2027)\n2026 Temmuz memur maaş katsayısı, Hazine ve Maliye Bakanlığı genelgesi\n\n#yds #yabancıdiltazminatı #yenimezunhekim #pratisyenhekim #hekim",
+    "alt_metinler": [
+      "İlk maaşın yattı. Yabancı dil tazminatıyla maaşını nasıl artırırsın? Elinde YDS sonuç belgesi tutan doktor karikatürü; yanında Sınav, Başvuru ve Yenileme yazan üç ikon.",
+      "Önce, yabancı dil tazminatı ne? Geçerli bir yabancı dil puanı olan memura her ay maaşıyla birlikte ödenen ek tutar. Neden önemli? Kadrolu hekim de memur sayıldığı için bu hak onu da kapsıyor, tutar puanına göre değişiyor.",
+      "Adım 1: Doğru sınav, en az 70 puan. Tazminatı yalnızca ÖSYM'nin YDS ve e-YDS sınavlarından alınan en az 70 puan getirir. Dikkat: YÖKDİL, TOEFL ve IELTS akademik başvurularda işe yarar, tazminatta kullanılmaz. Puanın seviyeni, seviyen de tutarı belirler.",
+      "Adım 2: Başvuru. Sonuç belgenle çalıştığın hastanenin maaş birimine başvurursun. Dikkat: Birden fazla dilde 70'i geçtiysen her dil için ayrı tazminat ödenir.",
+      "Adım 3: Beş yılda bir yenile. Sınav sonucun tazminat için beş yıl geçerli. Dikkat: Süre dolunca yeniden girmezsen bir alt seviyeden ödenir, C seviyesindeysen tazminat kesilir.",
+      "Ne kadar eklenir? Aylık, damga vergisi düşüldükten sonra, Temmuz-Aralık 2026: A seviyesi, 90-100 puan, yaklaşık 1.330 TL; B seviyesi, 80-89 puan, yaklaşık 940 TL; C seviyesi, 70-79 puan, yaklaşık 550 TL. Tutarlar memur maaş katsayısına bağlı, her Ocak ve Temmuz'da değişir. Kaynak: 375 sayılı KHK, 8. Dönem Toplu Sözleşme ve Temmuz 2026 memur maaş katsayısı.",
+      "Kısaca. YDS ya da e-YDS'den en az 70 puan al, başka sınav sayılmaz. Sonuç belgenle hastanenin maaş birimine başvur. Puanına göre her ay maaşına sabit bir tutar eklenir. Beş yıl dolmadan sınava yeniden gir, yoksa seviyen düşer. Kaydet, sınav sonucun gelince lazım olacak."
+    ],
+    "zaman": "2026-10-14T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null,
+    "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad"
   }
 ]
