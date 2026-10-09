@@ -69,7 +69,8 @@
     "sonuc": {
       "media_id": "18012496250760752",
       "tarih": "2026-10-07T17:16:33+00:00"
-    }
+    },
+    "notion_id": "3e89ef6b-7120-815b-8224-d6d06804624b"
   },
   {
     "id": "maas-her-ay-farkli",
@@ -97,7 +98,8 @@
     ],
     "zaman": "2026-10-09T20:00+03:00",
     "durum": "bekliyor",
-    "sonuc": null
+    "sonuc": null,
+    "notion_id": "3e89ef6b-7120-81e1-b99a-e8a9f47f2c4b"
   },
   {
     "id": "derece-ve-kademe",
@@ -123,6 +125,7 @@
     ],
     "zaman": "2026-10-11T20:00+03:00",
     "durum": "bekliyor",
-    "sonuc": null
+    "sonuc": null,
+    "notion_id": "3e89ef6b-7120-812d-be9f-e91daaf5b220"
   }
 ]
