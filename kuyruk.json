@@ -98,5 +98,31 @@
     "zaman": "2026-10-09T20:00+03:00",
     "durum": "bekliyor",
     "sonuc": null
+  },
+  {
+    "id": "derece-ve-kademe",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/derece-ve-kademe/01.jpg",
+      "medya/derece-ve-kademe/02.jpg",
+      "medya/derece-ve-kademe/03.jpg",
+      "medya/derece-ve-kademe/04.jpg",
+      "medya/derece-ve-kademe/05.jpg",
+      "medya/derece-ve-kademe/06.jpg",
+      "medya/derece-ve-kademe/07.jpg"
+    ],
+    "caption": "Memur aylığının çekirdeği olan gösterge rakamı iki sayıdan çıkıyor: derece ve kademe. Emekli ikramiyesi de bu göstergeye göre hesaplanıyor.\n\nKanunun 36. maddesindeki tabloda altı yıllık yükseköğrenim 9/3'ten başlıyor, tabip olmak bunun üstüne bir derece ekliyor. Giriş derecesinin ileri bir kademesinden başlayanların o kademelere karşılık gelen süresi, derece yükselmesi hesabında ayrıca sayılıyor. Üst derecede boş kadro olmadığı için derecesi yükseltilemeyen memurun aylığı ise yine üst dereceden ödeniyor.\n\nMaaşın hangi kalemlerden oluştuğunu ve neden her ay farklı yattığını anlattığım postlar profilde. Maaş ve bordroyla ilgili kısa notları Telegram kanalında da paylaşıyorum.\n\nKaynaklar:\n657 sayılı Devlet Memurları Kanunu, md. 36/A-5, 36/E, 64, 67, 68/A\n\n#derecekademe #yenimezunhekim #pratisyenhekim #intörn #hekim",
+    "alt_metinler": [
+      "Memuriyetteki derece ve kademe nedir? Düşünceli bakan doktor karikatürü; yanında Derece ve Kademe yazan iki ikon.",
+      "Önce, 8/3 ne demek? Memurlukta yerin iki sayıyla gösterilir: önce derece, sonra kademe. Tıp fakültesinden mezun olan hekim memurluğa 8/3'ten başlar. Neden önemli? Bu ikisi gösterge rakamını, gösterge de memur aylığını belirler.",
+      "Derece: büyük basamak. 15'ten 1'e doğru yükselir, sayı küçüldükçe yukarı çıkarsın. Nasıl değişir: Derecende üç yılı, o derecenin üçüncü kademesinde bir yılı doldurunca amirinin onayıyla yükselir. Üst derecede boş kadro olmasa da aylığın üst dereceden ödenir.",
+      "Kademe: derecenin içindeki basamak. Her derecenin içinde ilerlenen küçük basamaklar. Nasıl değişir: Derecende ilerleyecek kademe kaldıkça her yıl bir artar. Dilekçe gerekmez, kanun \"başkaca bir işleme gerek kalmaksızın\" diyor.",
+      "8/3'ün hesabı. Dört yıllık lisans mezunu 9/1'den, altı yıllık yükseköğrenim mezunu 9/3'ten başlar. Tabip unvanı bir derece ekler ve 8/3 olur. Başlangıçtaki 3. kademe, derecede geçirilmiş iki yıl sayılır; bu yüzden ilk derece yükselmesi için üç yıl beklenmez.",
+      "Bir kademe daha: sekiz yıl. Son sekiz yılda hiç disiplin cezası almayan memura bir kademe ilerlemesi daha verilir. Bu kademe, derecenin yükseltilmesinde de hesaba katılır. Kaynak: 657 sayılı Devlet Memurları Kanunu.",
+      "Akılda tutulacak tek şey: Kademe her yıl kendiliğinden artar, derece süre şartı dolunca amir onayıyla yükselir. Kaydet, bordrona bakarken lazım olacak."
+    ],
+    "zaman": "2026-10-11T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null
   }
 ]
