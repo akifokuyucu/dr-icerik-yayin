@@ -628,3 +628,11 @@
 - Instagram hesap ID: 17841436056636051
 - -> doktor-maasi (carousel) yayinlaniyor
 -    tamam - media_id 18012496250760752
+
+## 2026-10-09T17:19:33+00:00
+
+- Token tazelendi, kalan sure ~59 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Instagram hesap ID: 17841436056636051
+- -> maas-her-ay-farkli (carousel) yayinlaniyor
+-    tamam - media_id 18007076162786019

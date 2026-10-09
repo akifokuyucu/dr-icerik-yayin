@@ -97,8 +97,11 @@
       "Akılda tutulacak tek şey: Yıllık izin planlarken o ayın taban ödemesinin izin günü oranında düşeceğini hesaba kat. Yıllık izin planlayan bir arkadaşına gönder."
     ],
     "zaman": "2026-10-09T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18007076162786019",
+      "tarih": "2026-10-09T17:19:28+00:00"
+    },
     "notion_id": "3e89ef6b-7120-81e1-b99a-e8a9f47f2c4b"
   },
   {
