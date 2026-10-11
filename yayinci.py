@@ -25,6 +25,9 @@ from datetime import datetime, timedelta, timezone
 API = "https://graph.instagram.com/v23.0"
 KUYRUK = "kuyruk.json"
 GUNLUK = "gunluk.md"
+# Son basarili token tazeleme zamani. Token 60 gun gecerli; her calismada degil, gunde bir tazelenir.
+TAZELEME = "token_tazeleme.txt"
+TAZELEME_ARALIGI = timedelta(days=1)
 
 # GitHub'in saatlik cron'u saat basinda calismiyor; calismalar 2-8 saat arayla geliyor.
 # Bu yuzden zamani bu sure icinde gelecek bir post varsa calisma o saate kadar bekler.
@@ -194,6 +197,24 @@ def siradaki_bekle(kuyruk):
     return True
 
 
+def tazeleme_gerekli():
+    try:
+        with open(TAZELEME, encoding="utf-8") as dosya:
+            son = datetime.fromisoformat(dosya.read().strip())
+    except (FileNotFoundError, ValueError):
+        return True
+    return datetime.now(timezone.utc) - son >= TAZELEME_ARALIGI
+
+
+def erisim_var():
+    try:
+        hesap_id()
+        return True
+    except Exception as hata:  # noqa: BLE001
+        log(f"Instagram API'ye erisilemedi: {hata}")
+        return False
+
+
 def token_omru_kontrol():
     """Token'i tazeler ve kalan sureyi bildirir."""
     try:
@@ -207,6 +228,8 @@ def token_omru_kontrol():
             log("  yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)")
         if gun < 10:
             log("  !! DIKKAT: token 10 gunden az omurlu. Yenilemeyi kontrol et.")
+        with open(TAZELEME, "w", encoding="utf-8") as dosya:
+            dosya.write(datetime.now(timezone.utc).isoformat(timespec="seconds") + "\n")
         return True
     except Exception as hata:  # noqa: BLE001
         log(f"Token tazelenemedi: {hata}")
@@ -226,7 +249,8 @@ def main():
 
     # API erisimi yoksa is akisi basarisiz sayilir; GitHub e-postayla haber verir.
     # (Eskiden hata yutuluyordu ve hat haftalarca sessizce kapali kaldi.)
-    if not token_omru_kontrol():
+    # Tazeleme gunu degilse erisim ucuz bir "me" sorgusuyla denetlenir.
+    if not (token_omru_kontrol() if tazeleme_gerekli() else erisim_var()):
         gunluge_yaz()
         sys.exit("Instagram API'ye erisilemiyor - gunluge bak.")
 
