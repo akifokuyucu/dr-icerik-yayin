@@ -7,6 +7,13 @@ GitHub saatlik cron'u pratikte 2-8 saatte bir calistiriyor. Bu yuzden bir calism
 5,5 saat icinde gelecek bir post gorurse o saate kadar bekler, depoyu yeniden ceker
 (bekleme sirasinda yapilan degisiklikler gecerli olsun diye) ve postu tam saatinde yayinlar.
 
+**Cloudflare zamanlayicisi (`zamanlayici/`):** 5 dakikada bir kuyruga bakan kucuk bir Worker.
+Zamani 6 dakika icinde gelecek bir post varsa is akisini hemen baslatir; bu calisma en fazla
+10 dakika bekler. Boylece post saatinde cikar, saatlerce bekleyen calisma gerekmez.
+Gizli deger: Cloudflare'de `GITHUB_ANAHTARI` (ince ayarli token; yalnizca bu depo,
+"Actions: Read and write" + "Contents: Read-only"). Tanimli degilse zamanlayici kapali kalir.
+Yayina alma: `zamanlayici/` klasorunde `npx wrangler deploy`. Deneme: `node zamanlayici/test/test.mjs`.
+
 ## Nasil isler
 
 1. Medya dosyalari `medya/` klasorunde durur. Depo herkese acik oldugu icin bu dosyalarin

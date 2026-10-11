@@ -1,0 +1,14 @@
+// Dr. Reader yayın zamanlayıcısı. Yayına alma (bu klasörden): npx wrangler deploy
+// Gizli değer buraya YAZILMAZ: GITHUB_ANAHTARI Cloudflare'de "Secret" olarak durur.
+{
+	"name": "dr-reader-zamanlayici",
+	"main": "src/index.js",
+	"compatibility_date": "2026-10-01",
+	"triggers": { "crons": ["*/5 * * * *"] },
+	"vars": {
+		"DEPO": "akifokuyucu/dr-icerik-yayin",
+		"DAL": "main",
+		"IS_AKISI": "yayinla.yml"
+	},
+	"observability": { "enabled": true }
+}
