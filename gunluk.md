@@ -636,3 +636,12 @@
 - Instagram hesap ID: 17841436056636051
 - -> maas-her-ay-farkli (carousel) yayinlaniyor
 -    tamam - media_id 18007076162786019
+
+## 2026-10-11T17:00:56+00:00
+
+- Token tazelendi, kalan sure ~59 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Siradaki post 2026-10-11T20:00+03:00: 4 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> derece-ve-kademe (carousel) yayinlaniyor
+-    tamam - media_id 17966769015194941

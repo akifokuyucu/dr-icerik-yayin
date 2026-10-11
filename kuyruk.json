@@ -127,8 +127,11 @@
       "Akılda tutulacak tek şey: Kademe her yıl kendiliğinden artar, derece süre şartı dolunca amir onayıyla yükselir. Kaydet, bordrona bakarken lazım olacak."
     ],
     "zaman": "2026-10-11T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "17966769015194941",
+      "tarih": "2026-10-11T17:00:51+00:00"
+    },
     "notion_id": "3e89ef6b-7120-812d-be9f-e91daaf5b220"
   },
   {
