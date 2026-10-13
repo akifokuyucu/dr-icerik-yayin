@@ -33,6 +33,10 @@ GUNLUK = "gunluk.md"
 # Son basarili token tazeleme zamani. Token 60 gun gecerli; her calismada degil, gunde bir tazelenir.
 TAZELEME = "token_tazeleme.txt"
 TAZELEME_ARALIGI = timedelta(days=1)
+# Cift yayin korumasi: yayindan once hesabin son gonderilerine bakilir; ayni caption bu sure
+# icinde yayinlanmissa post tekrar yayinlanmaz, kuyrukta "yayinlandi" isaretlenir.
+TEKRAR_PENCERESI = timedelta(days=7)
+TEKRAR_SORGU_ADEDI = 25
 
 # GitHub'in saatlik cron'u saat basinda calismiyor; calismalar 2-8 saat arayla geliyor.
 # Bu yuzden zamani bu sure icinde gelecek bir post varsa calisma o saate kadar bekler.
@@ -75,6 +79,42 @@ def istek(yol, veri=None, sorgu=None):
 
 def hesap_id():
     return str(istek("me", sorgu={"fields": "user_id,username"})["user_id"])
+
+
+def caption_ozeti(metin):
+    """Caption karsilastirmasi icin bosluklar ve satir sonlari tekillestirilir."""
+    return " ".join((metin or "").split())
+
+
+def zaman_coz(deger):
+    try:
+        zaman = datetime.fromisoformat(str(deger).replace("Z", "+00:00"))
+    except ValueError:
+        return None
+    return zaman if zaman.tzinfo else zaman.replace(tzinfo=timezone.utc)
+
+
+def ayni_caption_yayinda(ig_id, kayit):
+    """Hesabin son gonderilerinde bu kaydin caption'i varsa o gonderiyi (media_id, zaman) doner.
+    Bir onceki calisma yayinlayip kuyrugu depoya yazamadiysa ayni post ikinci kez cikmasin diye.
+    Sorgu basarisiz olursa None doner: koruma ek bir katmandir, yayini engellemez."""
+    aranan = caption_ozeti(kayit.get("caption"))
+    if not aranan:
+        return None
+    try:
+        cevap = istek(f"{ig_id}/media", sorgu={
+            "fields": "id,caption,timestamp", "limit": str(TEKRAR_SORGU_ADEDI)})
+    except Exception as hata:  # noqa: BLE001
+        log(f"   ! cift yayin denetimi yapilamadi, yayinla devam ediliyor: {hata}")
+        return None
+    sinir = datetime.now(timezone.utc) - TEKRAR_PENCERESI
+    for medya in cevap.get("data", []):
+        zaman = zaman_coz(medya.get("timestamp"))
+        if zaman is None or zaman < sinir:
+            continue
+        if caption_ozeti(medya.get("caption")) == aranan:
+            return medya.get("id"), zaman
+    return None
 
 
 def medya_url(yol):
@@ -277,6 +317,18 @@ def main():
     degisti = False
     for kayit in bekleyen:
         etiket = kayit.get("id", "isimsiz")
+        mevcut = ayni_caption_yayinda(ig_id, kayit)
+        if mevcut:
+            media_id, zaman = mevcut
+            kayit["durum"] = "yayinlandi"
+            kayit["sonuc"] = {
+                "media_id": media_id,
+                "tarih": zaman.isoformat(timespec="seconds"),
+                "not": "ayni caption hesapta zaten yayinda; tekrar yayinlanmadi",
+            }
+            log(f"-> {etiket}: ayni caption hesapta zaten yayinda (media_id {media_id}), tekrar yayinlanmadi")
+            degisti = True
+            continue
         log(f"-> {etiket} ({kayit.get('tip')}) yayinlaniyor")
         try:
             konteyner = konteyner_olustur(ig_id, kayit)
