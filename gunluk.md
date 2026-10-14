@@ -645,3 +645,11 @@
 - Instagram hesap ID: 17841436056636051
 - -> derece-ve-kademe (carousel) yayinlaniyor
 -    tamam - media_id 17966769015194941
+
+## 2026-10-14T17:01:10+00:00
+
+- Siradaki post 2026-10-14T20:00+03:00: 27 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> dil-tazminati (carousel) yayinlaniyor
+-    tamam - media_id 18098151578638730
+-    Notion: dil-tazminati -> yayinlandi + baglanti

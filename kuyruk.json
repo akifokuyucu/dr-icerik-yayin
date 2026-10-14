@@ -157,8 +157,11 @@
       "Kısaca. YDS ya da e-YDS'den en az 70 puan al, başka sınav sayılmaz. Sonuç belgenle hastanenin maaş birimine başvur. Puanına göre her ay maaşına sabit bir tutar eklenir. Beş yıl dolmadan sınava yeniden gir, yoksa seviyen düşer. Kaydet, sınav sonucun gelince lazım olacak."
     ],
     "zaman": "2026-10-14T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18098151578638730",
+      "tarih": "2026-10-14T17:01:04+00:00"
+    },
     "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad"
   }
 ]
