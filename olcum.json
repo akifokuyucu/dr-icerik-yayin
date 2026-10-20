@@ -1,10 +1,27 @@
 {
-  "guncelleme": "2026-10-20T14:41:36+00:00",
+  "guncelleme": "2026-10-20T17:16:12+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
-    "takipci": 15,
-    "post": 5,
-    "tarih": "2026-10-20T14:41:36+00:00"
+    "takipci": 16,
+    "post": 6,
+    "tarih": "2026-10-20T17:16:12+00:00"
+  },
+  "takipci_gecmis": {
+    "2026-10-20": 16
+  },
+  "haftalik": {
+    "baslangic": "2026-10-13",
+    "bitis": "2026-10-20",
+    "yeni_postlar": [
+      "dil-tazminati",
+      "lisede-hazirlik-okuyana-bir-kademe"
+    ],
+    "kesinlesen": [
+      "hesabin-tanitimi-3"
+    ],
+    "takipci": {
+      "simdi": 16
+    }
   },
   "postlar": {
     "hesabin-tanitimi": {
@@ -28,7 +45,7 @@
         "total_interactions": 4,
         "profile_visits": 3,
         "follows": 0,
-        "tarih": "2026-10-20T14:41:36+00:00"
+        "tarih": "2026-10-20T17:16:12+00:00"
       },
       "g3": {
         "reach": 17,
@@ -53,6 +70,11 @@
         "profile_visits": 3,
         "follows": 0,
         "tarih": "2026-10-20T14:41:36+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.0,
+        "etkilesim": 0.2353
       }
     },
     "doktor-maasi": {
@@ -63,7 +85,7 @@
       "baglanti": "https://www.instagram.com/p/DeM39aQFgUh/",
       "son": {
         "reach": 20,
-        "views": 64,
+        "views": 66,
         "saved": 0,
         "shares": 0,
         "likes": 4,
@@ -71,7 +93,7 @@
         "total_interactions": 4,
         "profile_visits": 1,
         "follows": 0,
-        "tarih": "2026-10-20T14:41:36+00:00"
+        "tarih": "2026-10-20T17:16:12+00:00"
       },
       "g3": {
         "reach": 20,
@@ -84,6 +106,11 @@
         "profile_visits": 1,
         "follows": 0,
         "tarih": "2026-10-20T14:41:36+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.0,
+        "etkilesim": 0.2
       }
     },
     "maas-her-ay-farkli": {
@@ -94,7 +121,7 @@
       "baglanti": "https://www.instagram.com/p/DeSB4dyGl8G/",
       "son": {
         "reach": 22,
-        "views": 71,
+        "views": 72,
         "saved": 0,
         "shares": 4,
         "likes": 4,
@@ -102,7 +129,7 @@
         "total_interactions": 8,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-10-20T14:41:36+00:00"
+        "tarih": "2026-10-20T17:16:12+00:00"
       },
       "g3": {
         "reach": 22,
@@ -115,6 +142,11 @@
         "profile_visits": 5,
         "follows": 0,
         "tarih": "2026-10-20T14:41:36+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.1818,
+        "etkilesim": 0.3636
       }
     },
     "derece-ve-kademe": {
@@ -133,7 +165,7 @@
         "total_interactions": 4,
         "profile_visits": 4,
         "follows": 1,
-        "tarih": "2026-10-20T14:41:36+00:00"
+        "tarih": "2026-10-20T17:16:12+00:00"
       },
       "g3": {
         "reach": 32,
@@ -146,6 +178,11 @@
         "profile_visits": 4,
         "follows": 1,
         "tarih": "2026-10-20T14:41:36+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.0,
+        "etkilesim": 0.125
       }
     },
     "dil-tazminati": {
@@ -156,7 +193,7 @@
       "baglanti": "https://www.instagram.com/p/Dee3wDTm-TJ/",
       "son": {
         "reach": 20,
-        "views": 58,
+        "views": 60,
         "saved": 0,
         "shares": 0,
         "likes": 4,
@@ -164,7 +201,7 @@
         "total_interactions": 4,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-10-20T14:41:36+00:00"
+        "tarih": "2026-10-20T17:16:12+00:00"
       },
       "g3": {
         "reach": 20,
@@ -177,7 +214,32 @@
         "profile_visits": 5,
         "follows": 1,
         "tarih": "2026-10-20T14:41:36+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.0,
+        "etkilesim": 0.2
       }
+    },
+    "lisede-hazirlik-okuyana-bir-kademe": {
+      "media_id": "18072420638598050",
+      "baslik": "Lisede hazırlık okuduysan ve memur olarak çalışıyorsan maaşına bir kademe eklenebilir.…",
+      "yayin": "2026-10-20T17:00:54+00:00",
+      "notion_id": "3e29ef6b712081d69076fdafbb0ae620",
+      "baglanti": "https://www.instagram.com/p/DeuUfiUFeW_/",
+      "son": {
+        "reach": 0,
+        "views": 13,
+        "saved": 0,
+        "shares": 0,
+        "likes": 4,
+        "comments": 0,
+        "total_interactions": 4,
+        "profile_visits": 0,
+        "follows": 0,
+        "tarih": "2026-10-20T17:16:12+00:00"
+      },
+      "oran": {}
     }
   }
 }
