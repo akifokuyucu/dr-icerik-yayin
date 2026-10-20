@@ -10,7 +10,10 @@ Her post icin:
   son   - en son olcum (yayindan sonraki ilk 30 gun her gun tazelenir)
   g3    - yayindan >= 3 gun sonraki ilk olcum (ilk tepki)
   g14   - yayindan >= 14 gun sonraki ilk olcum (kalici sonuc; postlar bununla karsilastirilir)
-Ayrica hesap ozeti (takipci, post sayisi) ve postun Instagram baglantisi (permalink).
+  oran  - kaydetme / paylasma / etkilesim orani (erisime bolunur; g14 varsa ondan, yoksa son'dan)
+Ayrica hesap ozeti (takipci, post sayisi), postun Instagram baglantisi (permalink), gunluk takipci
+gecmisi (takipci_gecmis) ve son 7 gunun ozeti (haftalik). Haftalik ozeti Pazartesi brifing rutini okur
+(brifing/rutin-talimati.md, Adim 1c).
 
 Gerekli: IG_ACCESS_TOKEN (instagram_business_basic + instagram_business_manage_insights).
 Token'i tazelemez; tazeleme yayinci.py'de.
@@ -28,6 +31,7 @@ API = "https://graph.instagram.com/v23.0"
 KUYRUK = "kuyruk.json"
 OLCUM = "olcum.json"
 TAKIP_SURESI = timedelta(days=30)
+GECMIS_GUN = 120  # takipci_gecmis'te tutulan gun sayisi
 # Carousel/fotograf postlari icin desteklenen olcutler. Biri reddedilirse digerleri tek tek denenir.
 OLCUTLER = ["reach", "views", "saved", "shares", "likes", "comments", "total_interactions",
             "profile_visits", "follows"]
@@ -90,6 +94,44 @@ def baslik(kayit):
     return ilk if len(ilk) <= 90 else ilk[:87].rstrip() + "…"
 
 
+def oranlar(olcum):
+    """Erisime gore oranlar (0-1 arasi, 4 basamak). Erisim yoksa bos."""
+    erisim = olcum.get("reach")
+    if not erisim:
+        return {}
+    sonuc = {}
+    for ad, olcut in (("kaydetme", "saved"), ("paylasma", "shares"), ("etkilesim", "total_interactions")):
+        if isinstance(olcum.get(olcut), (int, float)):
+            sonuc[ad] = round(olcum[olcut] / erisim, 4)
+    return sonuc
+
+
+def haftalik_ozet(postlar, gecmis, simdi):
+    """Son 7 gun: yeni yayinlar, 14. gun olcumu kesinlesen postlar, takipci degisimi."""
+    bas = simdi - timedelta(days=7)
+    yeni, kesinlesen = [], []
+    for kimlik, p in postlar.items():
+        if p.get("silindi"):
+            continue
+        yayin = zaman_coz(p.get("yayin")) if p.get("yayin") else None
+        if yayin and yayin >= bas:
+            yeni.append(kimlik)
+        g14 = zaman_coz((p.get("g14") or {}).get("tarih", "")) if p.get("g14") else None
+        if g14 and g14 >= bas:
+            kesinlesen.append(kimlik)
+    bugun = simdi.date().isoformat()
+    once = (simdi - timedelta(days=7)).date().isoformat()
+    # 7 gun onceki kayit yoksa ondan sonraki ilk kayit (gecmis yeni basladiysa)
+    eski_gunler = sorted(g for g in gecmis if g >= once)
+    takipci = {"simdi": gecmis.get(bugun)}
+    if eski_gunler and eski_gunler[0] != bugun:
+        takipci.update({"once": gecmis[eski_gunler[0]], "once_tarih": eski_gunler[0]})
+        if takipci["simdi"] is not None:
+            takipci["degisim"] = takipci["simdi"] - takipci["once"]
+    return {"baslangic": once, "bitis": bugun, "yeni_postlar": yeni, "kesinlesen": kesinlesen,
+            "takipci": takipci}
+
+
 def main():
     if not TOKEN:
         sys.exit("IG_ACCESS_TOKEN yok.")
@@ -148,12 +190,26 @@ def main():
                 p["g3"] = olcum
             if yas >= timedelta(days=14) and not p.get("g14"):
                 p["g14"] = olcum
+        p["oran"] = oranlar(p.get("g14") or olcum)
         postlar[kayit["id"]] = p
         print(f"+ {kayit['id']}: erisim {olcum.get('reach')}, kaydetme {olcum.get('saved')}, "
               f"paylasma {olcum.get('shares')}")
 
+    # Olcumu biten (30 gunu gecmis) postlarda da oran dursun
+    for p in postlar.values():
+        if not p.get("oran") and (p.get("g14") or p.get("son")):
+            p["oran"] = oranlar(p.get("g14") or p["son"])
+
+    gecmis = dict(eski.get("takipci_gecmis", {}))
+    if isinstance(hesap.get("takipci"), int):
+        gecmis[simdi.date().isoformat()] = hesap["takipci"]
+    sinir = (simdi - timedelta(days=GECMIS_GUN)).date().isoformat()
+    gecmis = {g: v for g, v in sorted(gecmis.items()) if g >= sinir}
+
     with open(OLCUM, "w", encoding="utf-8") as f:
-        json.dump({"guncelleme": simdi.isoformat(timespec="seconds"), "hesap": hesap, "postlar": postlar},
+        json.dump({"guncelleme": simdi.isoformat(timespec="seconds"), "hesap": hesap,
+                   "takipci_gecmis": gecmis, "haftalik": haftalik_ozet(postlar, gecmis, simdi),
+                   "postlar": postlar},
                   f, ensure_ascii=False, indent=2)
         f.write("\n")
     if hata_sayisi:
