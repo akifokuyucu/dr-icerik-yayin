@@ -163,5 +163,28 @@
       "tarih": "2026-10-14T17:01:04+00:00"
     },
     "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad"
+  },
+  {
+    "id": "lisede-hazirlik-okuyana-bir-kademe",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/lisede-hazirlik-okuyana-bir-kademe/01.jpg",
+      "medya/lisede-hazirlik-okuyana-bir-kademe/02.jpg",
+      "medya/lisede-hazirlik-okuyana-bir-kademe/03.jpg",
+      "medya/lisede-hazirlik-okuyana-bir-kademe/04.jpg",
+      "medya/lisede-hazirlik-okuyana-bir-kademe/05.jpg"
+    ],
+    "caption": "Lisede hazırlık okuduysan ve memur olarak çalışıyorsan maaşına bir kademe eklenebilir. Bu hak kendiliğinden gelmiyor; hazırlık okuduğunu gösteren belgeyle kurumunun personel birimine dilekçe vermen gerekiyor. Derece ve kademenin ne olduğunu anlatan post profilde.\n\nKaynaklar:\n657 sayılı Devlet Memurları Kanunu, md. 36/A-5 ve A-6-b\n2914 sayılı Yükseköğretim Personel Kanunu, md. 3\n3359 sayılı Sağlık Hizmetleri Temel Kanunu, ek md. 3\nDanıştay İDDK, E.2020/2808, K.2021/139\nÇevre, Şehircilik ve İklim Değişikliği Bakanlığı yazıları: 07.07.2022 (E-53773008-622.02-4102963), 03.04.2023 (E-53773008-622.02-6117609)\n\n#dhy #pratisyenhekim #yenimezunhekim #memur #kademe",
+    "alt_metinler": [
+      "Lisede hazırlık okudun mu? Maaşında bir kademe farkı olabilir.",
+      "Hazırlık yılın boşa gitmemiş olabilir. Hazırlık okuduğun için bir kademe alabileceğini biliyor muydun? Kanunda lise hazırlığı açıkça belirtilmese de Danıştay, 2021 yılında lise hazırlık sınıfı okuyanlar lehine bir karar verdi.",
+      "Peki, bu ne işe yarıyor? Bir kademe ilerlemesi, maaşını da etkileyebilir. Örneğin, 8/3 kademesinden başlayan bir hekimin hazırlık yılı için kademe ilerlemesi kabul edilirse derece ve kademesi 7/1 olabilir. Yani hazırlık yılın, meslek hayatında da işine yarayabilir.",
+      "Kimler yararlanabilir? Burada önemli olan, nerede hazırlık okuduğun ve hangi kadroda çalıştığın. Lisede hazırlık okuduysan ve devlet memuru olarak çalışıyorsan başvuru yapabilirsin. DHY görevini devlet memuru olarak yapan hekimler de bu imkânı değerlendirebilir. Üniversitede hazırlık okumuş olmak aynı kapsamda değerlendirilmez. Üniversitede araştırma görevlisi kadrosunda çalışanların durumu farklıdır.",
+      "Nasıl başvurabilirsin? Aslında ilk adım oldukça basit. Bir: hazırlık okuduğunu gösteren belgeyi okulundan al. İki: çalıştığın kurumun personel birimine dilekçeyle başvur. Üç: başvurunun sonucunu takip et ve derece-kademe bilgilerini kontrol et. Kaydet, belki senin de işine yarar. Bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Kaynak: 657 sayılı Kanun ve Danıştay kararı."
+    ],
+    "zaman": "2026-10-20T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null,
+    "notion_id": "3e29ef6b712081d69076fdafbb0ae620"
   }
 ]
