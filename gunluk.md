@@ -653,3 +653,11 @@
 - -> dil-tazminati (carousel) yayinlaniyor
 -    tamam - media_id 18098151578638730
 -    Notion: dil-tazminati -> yayinlandi + baglanti
+
+## 2026-10-20T17:01:00+00:00
+
+- Siradaki post 2026-10-20T20:00+03:00: 140 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> lisede-hazirlik-okuyana-bir-kademe (carousel) yayinlaniyor
+-    tamam - media_id 18072420638598050
+-    Notion: lisede-hazirlik-okuyana-bir-kademe -> yayinlandi + baglanti

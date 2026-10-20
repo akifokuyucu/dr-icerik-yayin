@@ -183,8 +183,11 @@
       "Nasıl başvurabilirsin? Aslında ilk adım oldukça basit. Bir: hazırlık okuduğunu gösteren belgeyi okulundan al. İki: çalıştığın kurumun personel birimine dilekçeyle başvur. Üç: başvurunun sonucunu takip et ve derece-kademe bilgilerini kontrol et. Kaydet, belki senin de işine yarar. Bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Kaynak: 657 sayılı Kanun ve Danıştay kararı."
     ],
     "zaman": "2026-10-20T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18072420638598050",
+      "tarih": "2026-10-20T17:00:54+00:00"
+    },
     "notion_id": "3e29ef6b712081d69076fdafbb0ae620"
   }
 ]
