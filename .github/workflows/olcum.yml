@@ -1,0 +1,50 @@
+name: Instagram olcum
+
+on:
+  schedule:
+    # Gunde bir (UTC 05:17 = TR 08:17). Yayin isiyle ayni anda olsa da sorun yok: yalnizca olcum.json yazar.
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-olcum
+  cancel-in-progress: false
+
+jobs:
+  olc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v7
+
+      - name: Python kur
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Olcumu calistir
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python olcum.py
+
+      - name: Sonucu kaydet
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain olcum.json)" ]; then
+            git config user.name "yayin-botu"
+            git config user.email "actions@github.com"
+            git add olcum.json
+            git commit -m "olcum: istatistikler guncellendi"
+            for deneme in 1 2 3; do
+              git pull --rebase origin "$GITHUB_REF_NAME" && git push && exit 0
+              git rebase --abort || true
+              sleep 5
+            done
+            exit 1
+          else
+            echo "Degisiklik yok."
+          fi
