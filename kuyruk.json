@@ -189,5 +189,32 @@
       "tarih": "2026-10-20T17:00:54+00:00"
     },
     "notion_id": "3e29ef6b712081d69076fdafbb0ae620"
+  },
+  {
+    "id": "kutudaki-ekler",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/kutudaki-ekler/01.jpg",
+      "medya/kutudaki-ekler/02.jpg",
+      "medya/kutudaki-ekler/03.jpg",
+      "medya/kutudaki-ekler/04.jpg",
+      "medya/kutudaki-ekler/05.jpg",
+      "medya/kutudaki-ekler/06.jpg",
+      "medya/kutudaki-ekler/07.jpg"
+    ],
+    "caption": "Uzun salınımlı tableti ikiye bölüp içen hastayla poliklinikte sık karşılaşıyorum. Kutudaki ek ilacın dozunu, içeriğini, kullanım sıklığını ya da salımını söyler; SR, XR, CR, retard ya da EC varsa tablet bütün yutulur.\n\nEmin olmadığın bir üründe KÜB'e TİTCK'nin sitesinden ilaç adıyla ulaşabilirsin.\n\nKaynaklar:\nAvrupa Farmakopesi, EDQM Standart Terimler (farmasötik dozaj formları)\nİlgili ürünlerin Kısa Ürün Bilgisi (KÜB), TİTCK\nFDA ürün etiketleri (DailyMed): metoprolol süksinat uzatılmış salımlı tablet\n\n#intörn #yenimezunhekim #pratisyenhekim #farmakoloji #reçete",
+    "alt_metinler": [
+      "İlaç adının sonundaki Forte, Plus, SR ne anlatıyor?",
+      "Forte mi, Plus mı? Adı aynı iki kutu aynı ilaç olmayabilir. Forte daha yüksek dozlu hâli; adı İtalyanca güçlü demek. Plus ve Duo, içinde ikinci bir etken madde olduğunu söyler. İlaç öyküsünde eki de sor; aynı madde iki kez alınıyor olabilir.",
+      "SR, XR, CR, retard ne demek? Hepsi aynı aileden: tablet dozu bir anda değil, saatlere yayarak salar. Bu yüzden günde daha az kez alınır. Retard kısaltma değil; Latince geciktirmek anlamındaki retardare kökünden gelen bir ad.",
+      "Peki EC? Enterik kaplı tablet. Kaplaması mide asidine dayanır, tablet ancak bağırsakta çözülür. Ya mide ilaçtan korunur ya da ilaç, mide asidinde bozulmasın diye bağırsağa kadar saklanır.",
+      "Harflerin açılımı. Çoğu İngilizce bir terimin baş harfleri, BID ise Latince. SR, Sustained Release, sürekli salım. CR, Controlled Release, kontrollü salım. MR, Modified Release, değiştirilmiş salım; uzun ve gecikmeli salımın çatı adı. EC, Enteric Coated, enterik kaplı. BID, bis in die, günde iki kez.",
+      "Neden bölünmez? Uzun salımlı tablet bölünür ya da ezilirse saatlere yayılacak doz bir anda kana karışabilir; buna dose dumping, doz boşalması denir. EC tablet bölünürse kaplaması işini yapamaz, ilaç midede çözülür. Bazı çentikli tabletler ikiye bölünebilir ama yarısı da ezilmez, çiğnenmez. Kaynak: Avrupa Farmakopesi, ürünlerin Kısa Ürün Bilgisi ve FDA ürün etiketleri.",
+      "Tek bakışta. SR, XR, CR, MR ve retard: salım saatlere yayılır. EC: bağırsakta çözülür. Plus ve Duo: ikinci etken madde. Forte: daha yüksek doz. BID: günde iki kez. Kaydet, reçete yazarken lazım olacak."
+    ],
+    "zaman": "2026-10-22T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null,
+    "notion_id": "3e89ef6b712081e09b18c920b98f8a46"
   }
 ]
