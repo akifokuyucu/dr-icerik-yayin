@@ -216,5 +216,28 @@
     "durum": "bekliyor",
     "sonuc": null,
     "notion_id": "3e89ef6b712081e09b18c920b98f8a46"
+  },
+  {
+    "id": "usmle-ilk-deneme",
+    "tip": "carousel",
+    "dosyalar": [
+      "medya/usmle-ilk-deneme/01.jpg",
+      "medya/usmle-ilk-deneme/02.jpg",
+      "medya/usmle-ilk-deneme/03.jpg",
+      "medya/usmle-ilk-deneme/04.jpg",
+      "medya/usmle-ilk-deneme/05.jpg"
+    ],
+    "caption": "ABD dışındaki fakültelerden Step 1'e ilk kez girenlerin %75'i geçiyor, tekrar girenlerde bu oran %54'e düşüyor. Kalınan deneme transkriptten silinmediği için en önemli deneme ilki.\n\n2025'te Step 1'e ilk kez giren 49.717 kişinin 22.066'sı ABD dışındaki fakültelerdendi. Sonraki sınavlarda fark daralıyor: ABD dışından girenlerin Step 2 CK'da %90'ı, Step 3'te %88'i geçiyor; ABD'deki MD öğrencilerinde bu oranlar %98 ve %96. Mülakat davetinde en çok bakılan ölçüt Step 2 CK puanı (%89). Uzmanlık kadroları Match ile dağıtılıyor: 2026'da ABD vatandaşı olmayan ABD dışı mezunların %56,4'ü, ABD'deki MD son sınıflarının %93,5'i eşleşti.\n\nKaynaklar:\nUSMLE, Performance Data (usmle.org/performance-data)\nUSMLE, Bulletin of Information: Eligibility; Scoring and Score Reporting\nNRMP, 2026 Program Director Survey\nNRMP, 2026 Main Residency Match sonuçları\n\n#usmle #yurtdışındadoktorluk #tıpöğrencisi #yenimezunhekim #abddedoktorluk",
+    "alt_metinler": [
+      "Step 1'i ilk denemede kaç kişi geçiyor?",
+      "ABD dışından girenlerin ne kadarı geçiyor? ABD dışındaki fakültelerden Step 1'e ilk kez girenlerin 100'de 75'i geçiyor, ABD'deki tıp fakültesi öğrencilerinde bu oran 100'de 93. USMLE oranları ülkelere göre ayırmıyor; Türkiye'den girenler de bu ortalamanın içinde.",
+      "Kalırsan ne oluyor? ABD dışından Step 1'e tekrar girenlerin 100'de 54'ü geçiyor. Aynı Step'e 12 ay içinde en fazla üç kez girilebilir; dört denemede geçemeyen hiçbir Step'e bir daha başvuramaz.",
+      "Kaldığın deneme silinir mi? Silinmez. Step 1'de 2022'den beri puan yok, sonuç yalnızca geçti ya da kaldı olarak bildiriliyor, ama USMLE transkriptinde bütün denemeler görünüyor. ABD'de uzmanlık programı yöneticilerinin 100'de 87'si mülakat daveti verirken Step 1 sonucuna bakıyor. Kaynak: USMLE ve NRMP.",
+      "Step 1'de kaldığın deneme transkriptinden silinmez ve dört deneme hakkından birini kullanmış olursun. Sınav tarihini hazır olduğunda seç. Kaydet, sınav tarihini seçerken lazım olacak."
+    ],
+    "zaman": "2026-10-24T20:00+03:00",
+    "durum": "bekliyor",
+    "sonuc": null,
+    "notion_id": "3e29ef6b712081a0a545d7537eb5c645"
   }
 ]
