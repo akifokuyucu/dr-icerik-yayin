@@ -671,3 +671,11 @@
 - -> kutudaki-ekler (carousel) yayinlaniyor
 -    tamam - media_id 17949436449299497
 -    Notion: kutudaki-ekler -> yayinlandi + baglanti
+
+## 2026-10-22T17:01:29+00:00
+
+- Token tazelendi, kalan sure ~59 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Instagram hesap ID: 17841436056636051
+- -> kutudaki-ekler: ayni caption hesapta zaten yayinda (media_id 17949436449299497), tekrar yayinlanmadi
+-    Notion: kutudaki-ekler -> yayinlandi + baglanti
