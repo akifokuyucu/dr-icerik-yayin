@@ -661,3 +661,13 @@
 - -> lisede-hazirlik-okuyana-bir-kademe (carousel) yayinlaniyor
 -    tamam - media_id 18072420638598050
 -    Notion: lisede-hazirlik-okuyana-bir-kademe -> yayinlandi + baglanti
+
+## 2026-10-22T17:01:12+00:00
+
+- Token tazelendi, kalan sure ~60 gun.
+-   yeni token yeni_token.txt dosyasina yazildi (is akisi Secret'a tasiyacak)
+- Siradaki post 2026-10-22T20:00+03:00: 213 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> kutudaki-ekler (carousel) yayinlaniyor
+-    tamam - media_id 17949436449299497
+-    Notion: kutudaki-ekler -> yayinlandi + baglanti

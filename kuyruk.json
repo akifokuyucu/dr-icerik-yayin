@@ -213,8 +213,11 @@
       "Tek bakışta. SR, XR, CR, MR ve retard: salım saatlere yayılır. EC: bağırsakta çözülür. Plus ve Duo: ikinci etken madde. Forte: daha yüksek doz. BID: günde iki kez. Kaydet, reçete yazarken lazım olacak."
     ],
     "zaman": "2026-10-22T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "17949436449299497",
+      "tarih": "2026-10-22T17:01:04+00:00"
+    },
     "notion_id": "3e89ef6b712081e09b18c920b98f8a46"
   },
   {
