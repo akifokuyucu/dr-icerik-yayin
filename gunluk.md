@@ -679,3 +679,11 @@
 - Instagram hesap ID: 17841436056636051
 - -> kutudaki-ekler: ayni caption hesapta zaten yayinda (media_id 17949436449299497), tekrar yayinlanmadi
 -    Notion: kutudaki-ekler -> yayinlandi + baglanti
+
+## 2026-10-24T17:00:51+00:00
+
+- Siradaki post 2026-10-24T20:00+03:00: 233 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> usmle-ilk-deneme (carousel) yayinlaniyor
+-    tamam - media_id 18151078939525177
+-    Notion: usmle-ilk-deneme -> yayinlandi + baglanti

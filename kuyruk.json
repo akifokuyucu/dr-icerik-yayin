@@ -239,8 +239,11 @@
       "Step 1'de kaldığın deneme transkriptinden silinmez ve dört deneme hakkından birini kullanmış olursun. Sınav tarihini hazır olduğunda seç. Kaydet, sınav tarihini seçerken lazım olacak."
     ],
     "zaman": "2026-10-24T20:00+03:00",
-    "durum": "bekliyor",
-    "sonuc": null,
+    "durum": "yayinlandi",
+    "sonuc": {
+      "media_id": "18151078939525177",
+      "tarih": "2026-10-24T17:00:46+00:00"
+    },
     "notion_id": "3e29ef6b712081a0a545d7537eb5c645"
   }
 ]
