@@ -1,24 +1,26 @@
 {
-  "guncelleme": "2026-10-24T09:31:17+00:00",
+  "guncelleme": "2026-10-25T09:47:53+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 20,
-    "post": 7,
-    "tarih": "2026-10-24T09:31:17+00:00"
+    "post": 8,
+    "tarih": "2026-10-25T09:47:53+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
     "2026-10-21": 17,
     "2026-10-22": 18,
     "2026-10-23": 19,
-    "2026-10-24": 20
+    "2026-10-24": 20,
+    "2026-10-25": 20
   },
   "haftalik": {
-    "baslangic": "2026-10-17",
-    "bitis": "2026-10-24",
+    "baslangic": "2026-10-18",
+    "bitis": "2026-10-25",
     "yeni_postlar": [
       "lisede-hazirlik-okuyana-bir-kademe",
-      "kutudaki-ekler"
+      "kutudaki-ekler",
+      "usmle-ilk-deneme"
     ],
     "kesinlesen": [
       "hesabin-tanitimi-3",
@@ -45,8 +47,8 @@
       "yayin": "2026-10-05T12:41:09+00:00",
       "baglanti": "https://www.instagram.com/p/DeHO2k8m3O5/",
       "son": {
-        "reach": 32,
-        "views": 74,
+        "reach": 35,
+        "views": 83,
         "saved": 0,
         "shares": 0,
         "likes": 7,
@@ -54,7 +56,7 @@
         "total_interactions": 7,
         "profile_visits": 3,
         "follows": 0,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "g3": {
         "reach": 17,
@@ -93,8 +95,8 @@
       "notion_id": "3e89ef6b-7120-815b-8224-d6d06804624b",
       "baglanti": "https://www.instagram.com/p/DeM39aQFgUh/",
       "son": {
-        "reach": 38,
-        "views": 114,
+        "reach": 42,
+        "views": 124,
         "saved": 0,
         "shares": 0,
         "likes": 7,
@@ -102,7 +104,7 @@
         "total_interactions": 7,
         "profile_visits": 2,
         "follows": 0,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "g3": {
         "reach": 20,
@@ -141,8 +143,8 @@
       "notion_id": "3e89ef6b-7120-81e1-b99a-e8a9f47f2c4b",
       "baglanti": "https://www.instagram.com/p/DeSB4dyGl8G/",
       "son": {
-        "reach": 43,
-        "views": 123,
+        "reach": 47,
+        "views": 134,
         "saved": 0,
         "shares": 4,
         "likes": 8,
@@ -150,7 +152,7 @@
         "total_interactions": 12,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "g3": {
         "reach": 22,
@@ -189,8 +191,8 @@
       "notion_id": "3e89ef6b-7120-812d-be9f-e91daaf5b220",
       "baglanti": "https://www.instagram.com/p/DeXJWJylGsY/",
       "son": {
-        "reach": 49,
-        "views": 122,
+        "reach": 53,
+        "views": 131,
         "saved": 0,
         "shares": 0,
         "likes": 8,
@@ -198,7 +200,7 @@
         "total_interactions": 8,
         "profile_visits": 4,
         "follows": 1,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "g3": {
         "reach": 32,
@@ -215,7 +217,7 @@
       "oran": {
         "kaydetme": 0.0,
         "paylasma": 0.0,
-        "etkilesim": 0.1633
+        "etkilesim": 0.1509
       }
     },
     "dil-tazminati": {
@@ -225,8 +227,8 @@
       "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad",
       "baglanti": "https://www.instagram.com/p/Dee3wDTm-TJ/",
       "son": {
-        "reach": 38,
-        "views": 118,
+        "reach": 42,
+        "views": 127,
         "saved": 0,
         "shares": 1,
         "likes": 8,
@@ -234,7 +236,7 @@
         "total_interactions": 9,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "g3": {
         "reach": 20,
@@ -250,8 +252,8 @@
       },
       "oran": {
         "kaydetme": 0.0,
-        "paylasma": 0.0263,
-        "etkilesim": 0.2368
+        "paylasma": 0.0238,
+        "etkilesim": 0.2143
       }
     },
     "lisede-hazirlik-okuyana-bir-kademe": {
@@ -261,8 +263,8 @@
       "notion_id": "3e29ef6b712081d69076fdafbb0ae620",
       "baglanti": "https://www.instagram.com/p/DeuUfiUFeW_/",
       "son": {
-        "reach": 108,
-        "views": 248,
+        "reach": 114,
+        "views": 265,
         "saved": 0,
         "shares": 2,
         "likes": 14,
@@ -270,12 +272,12 @@
         "total_interactions": 17,
         "profile_visits": 23,
         "follows": 3,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
-        "paylasma": 0.0185,
-        "etkilesim": 0.1574
+        "paylasma": 0.0175,
+        "etkilesim": 0.1491
       },
       "g3": {
         "reach": 108,
@@ -297,8 +299,8 @@
       "notion_id": "3e89ef6b712081e09b18c920b98f8a46",
       "baglanti": "https://www.instagram.com/p/DezeHLnljI6/",
       "son": {
-        "reach": 30,
-        "views": 107,
+        "reach": 36,
+        "views": 127,
         "saved": 0,
         "shares": 0,
         "likes": 11,
@@ -306,12 +308,36 @@
         "total_interactions": 11,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-10-24T09:31:17+00:00"
+        "tarih": "2026-10-25T09:47:53+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
         "paylasma": 0.0,
-        "etkilesim": 0.3667
+        "etkilesim": 0.3056
+      }
+    },
+    "usmle-ilk-deneme": {
+      "media_id": "18151078939525177",
+      "baslik": "ABD dışındaki fakültelerden Step 1'e ilk kez girenlerin %75'i geçiyor, tekrar girenlerd…",
+      "yayin": "2026-10-24T17:00:46+00:00",
+      "notion_id": "3e29ef6b712081a0a545d7537eb5c645",
+      "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
+      "son": {
+        "reach": 29,
+        "views": 100,
+        "saved": 0,
+        "shares": 0,
+        "likes": 5,
+        "comments": 0,
+        "total_interactions": 5,
+        "profile_visits": 4,
+        "follows": 0,
+        "tarih": "2026-10-25T09:47:53+00:00"
+      },
+      "oran": {
+        "kaydetme": 0.0,
+        "paylasma": 0.0,
+        "etkilesim": 0.1724
       }
     }
   }
