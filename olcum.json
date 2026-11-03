@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-02T13:28:35+00:00",
+  "guncelleme": "2026-11-03T12:46:53+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 26,
     "post": 8,
-    "tarih": "2026-11-02T13:28:35+00:00"
+    "tarih": "2026-11-03T12:46:53+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -20,20 +20,21 @@
     "2026-10-30": 24,
     "2026-10-31": 26,
     "2026-11-01": 26,
-    "2026-11-02": 26
+    "2026-11-02": 26,
+    "2026-11-03": 26
   },
   "haftalik": {
-    "baslangic": "2026-10-26",
-    "bitis": "2026-11-02",
+    "baslangic": "2026-10-27",
+    "bitis": "2026-11-03",
     "yeni_postlar": [],
     "kesinlesen": [
       "dil-tazminati"
     ],
     "takipci": {
       "simdi": 26,
-      "once": 21,
-      "once_tarih": "2026-10-26",
-      "degisim": 5
+      "once": 23,
+      "once_tarih": "2026-10-27",
+      "degisim": 3
     }
   },
   "postlar": {
@@ -58,7 +59,7 @@
         "total_interactions": 8,
         "profile_visits": 3,
         "follows": 0,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "g3": {
         "reach": 17,
@@ -106,7 +107,7 @@
         "total_interactions": 8,
         "profile_visits": 2,
         "follows": 0,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "g3": {
         "reach": 20,
@@ -154,7 +155,7 @@
         "total_interactions": 12,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "g3": {
         "reach": 22,
@@ -202,7 +203,7 @@
         "total_interactions": 8,
         "profile_visits": 4,
         "follows": 1,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "g3": {
         "reach": 32,
@@ -250,7 +251,7 @@
         "total_interactions": 9,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "g3": {
         "reach": 20,
@@ -298,7 +299,7 @@
         "total_interactions": 18,
         "profile_visits": 24,
         "follows": 3,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -334,7 +335,7 @@
         "total_interactions": 12,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -370,7 +371,7 @@
         "total_interactions": 5,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-11-02T13:28:35+00:00"
+        "tarih": "2026-11-03T12:46:53+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
