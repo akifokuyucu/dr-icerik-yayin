@@ -163,6 +163,8 @@ def konteyner_olustur(ig_id, kayit):
             "caption": caption,
             "share_to_feed": "true",
         }
+        if kayit.get("kapak"):  # ozel kapak (JPG, herkese acik adres); yoksa Instagram videonun ilk karesini kullanir
+            alanlar["cover_url"] = medya_url(kayit["kapak"])
         kimlik = istek(f"{ig_id}/media", veri=alanlar)["id"]
         konteyner_bekle(kimlik)
         return kimlik
