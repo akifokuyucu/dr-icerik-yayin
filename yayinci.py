@@ -121,6 +121,22 @@ def medya_url(yol):
     return f"{RAW_BASE}/{urllib.parse.quote(yol.lstrip('/'))}"
 
 
+def video_url(yol):
+    """Videoyu jsDelivr'den verir (6 Kasim 2026): raw.githubusercontent mp4'u application/octet-stream diye
+    sunuyor, Instagram Reels konteynerini 'ERROR' ile reddetti. jsDelivr ayni dosyayi video/mp4 olarak verir.
+    Adreste o anki commit yazar (bekleme sirasindaki git pull dahil): @main onbellekten eski dosya verebilir.
+    Depo bilgisi yoksa (yerel deneme) raw adresine duser."""
+    depo = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    try:
+        sha = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True,
+                             check=True).stdout.strip()
+    except Exception:  # noqa: BLE001
+        sha = os.environ.get("GITHUB_SHA", "").strip()
+    if not (depo and sha):
+        return medya_url(yol)
+    return f"https://cdn.jsdelivr.net/gh/{depo}@{sha}/{urllib.parse.quote(yol.lstrip('/'))}"
+
+
 def konteyner_bekle(kimlik, azami=300, aralik=10):
     """Konteynerin (gorsel, video veya carousel) islenmesini bekler.
     Instagram medyayi indirip islemeden media_publish cagrilirsa 9007 hatasi doner."""
@@ -159,7 +175,7 @@ def konteyner_olustur(ig_id, kayit):
     if tip == "reels":
         alanlar = {
             "media_type": "REELS",
-            "video_url": medya_url(dosyalar[0]),
+            "video_url": video_url(dosyalar[0]),
             "caption": caption,
             "share_to_feed": "true",
         }
@@ -176,7 +192,7 @@ def konteyner_olustur(ig_id, kayit):
             alanlar = {"is_carousel_item": "true"}
             if video:
                 alanlar["media_type"] = "VIDEO"
-                alanlar["video_url"] = medya_url(dosya)
+                alanlar["video_url"] = video_url(dosya)
             else:
                 alanlar["image_url"] = medya_url(dosya)
                 if alt_metin(kayit, sira):
