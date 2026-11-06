@@ -245,5 +245,16 @@
       "tarih": "2026-10-24T17:00:46+00:00"
     },
     "notion_id": "3e29ef6b712081a0a545d7537eb5c645"
+  },
+  {
+    "id": "test-video",
+    "tip": "reels",
+    "dosyalar": [
+      "medya/test-video/video.mp4"
+    ],
+    "caption": "Yayın hattı denemesi. Bu gönderi kısa süre sonra silinecek.",
+    "alt_metinler": [],
+    "zaman": "2026-11-06T20:00+03:00",
+    "durum": "bekliyor"
   }
 ]
