@@ -687,3 +687,10 @@
 - -> usmle-ilk-deneme (carousel) yayinlaniyor
 -    tamam - media_id 18151078939525177
 -    Notion: usmle-ilk-deneme -> yayinlandi + baglanti
+
+## 2026-11-06T17:00:42+00:00
+
+- Siradaki post 2026-11-06T20:00+03:00: 4 dakika beklendi.
+- Instagram hesap ID: 17841436056636051
+- -> sina-tanitim (reels) yayinlaniyor
+-    HATA: Konteyner islenemedi: ERROR
