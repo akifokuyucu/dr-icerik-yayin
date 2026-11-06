@@ -694,3 +694,10 @@
 - Instagram hesap ID: 17841436056636051
 - -> sina-tanitim (reels) yayinlaniyor
 -    HATA: Konteyner islenemedi: ERROR
+
+## 2026-11-06T17:11:32+00:00
+
+- Instagram hesap ID: 17841436056636051
+- -> sina-tanitim (reels) yayinlaniyor
+-    tamam - media_id 17917299876549408
+-    Notion: sina-tanitim -> yayinlandi + baglanti
