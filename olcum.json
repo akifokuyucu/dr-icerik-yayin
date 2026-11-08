@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-07T11:42:48+00:00",
+  "guncelleme": "2026-11-08T11:55:16+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
-    "takipci": 32,
+    "takipci": 33,
     "post": 9,
-    "tarih": "2026-11-07T11:42:48+00:00"
+    "tarih": "2026-11-08T11:55:16+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -25,23 +25,25 @@
     "2026-11-04": 28,
     "2026-11-05": 29,
     "2026-11-06": 30,
-    "2026-11-07": 32
+    "2026-11-07": 32,
+    "2026-11-08": 33
   },
   "haftalik": {
-    "baslangic": "2026-10-31",
-    "bitis": "2026-11-07",
+    "baslangic": "2026-11-01",
+    "bitis": "2026-11-08",
     "yeni_postlar": [
       "sina-tanitim"
     ],
     "kesinlesen": [
       "lisede-hazirlik-okuyana-bir-kademe",
-      "kutudaki-ekler"
+      "kutudaki-ekler",
+      "usmle-ilk-deneme"
     ],
     "takipci": {
-      "simdi": 32,
+      "simdi": 33,
       "once": 26,
-      "once_tarih": "2026-10-31",
-      "degisim": 6
+      "once_tarih": "2026-11-01",
+      "degisim": 7
     }
   },
   "postlar": {
@@ -162,7 +164,7 @@
         "total_interactions": 12,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "g3": {
         "reach": 22,
@@ -210,7 +212,7 @@
         "total_interactions": 9,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "g3": {
         "reach": 32,
@@ -249,8 +251,8 @@
       "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad",
       "baglanti": "https://www.instagram.com/p/Dee3wDTm-TJ/",
       "son": {
-        "reach": 65,
-        "views": 176,
+        "reach": 66,
+        "views": 177,
         "saved": 0,
         "shares": 1,
         "likes": 8,
@@ -258,7 +260,7 @@
         "total_interactions": 9,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "g3": {
         "reach": 20,
@@ -297,8 +299,8 @@
       "notion_id": "3e29ef6b712081d69076fdafbb0ae620",
       "baglanti": "https://www.instagram.com/p/DeuUfiUFeW_/",
       "son": {
-        "reach": 147,
-        "views": 336,
+        "reach": 148,
+        "views": 337,
         "saved": 0,
         "shares": 2,
         "likes": 15,
@@ -306,7 +308,7 @@
         "total_interactions": 18,
         "profile_visits": 24,
         "follows": 3,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -354,7 +356,7 @@
         "total_interactions": 13,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "oran": {
         "kaydetme": 0.0161,
@@ -394,7 +396,7 @@
       "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
       "son": {
         "reach": 59,
-        "views": 180,
+        "views": 185,
         "saved": 0,
         "shares": 0,
         "likes": 5,
@@ -402,7 +404,7 @@
         "total_interactions": 5,
         "profile_visits": 5,
         "follows": 0,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -420,6 +422,18 @@
         "profile_visits": 5,
         "follows": 0,
         "tarih": "2026-10-28T11:19:51+00:00"
+      },
+      "g14": {
+        "reach": 59,
+        "views": 185,
+        "saved": 0,
+        "shares": 0,
+        "likes": 5,
+        "comments": 0,
+        "total_interactions": 5,
+        "profile_visits": 5,
+        "follows": 0,
+        "tarih": "2026-11-08T11:55:16+00:00"
       }
     },
     "sina-tanitim": {
@@ -429,19 +443,19 @@
       "notion_id": "40b9ef6b71208155b834f546fcaf7e56",
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
-        "reach": 1295,
-        "views": 1472,
+        "reach": 1311,
+        "views": 1501,
         "saved": 4,
         "shares": 2,
-        "likes": 18,
+        "likes": 20,
         "comments": 0,
-        "total_interactions": 24,
-        "tarih": "2026-11-07T11:42:48+00:00"
+        "total_interactions": 26,
+        "tarih": "2026-11-08T11:55:16+00:00"
       },
       "oran": {
         "kaydetme": 0.0031,
         "paylasma": 0.0015,
-        "etkilesim": 0.0185
+        "etkilesim": 0.0198
       }
     }
   }
