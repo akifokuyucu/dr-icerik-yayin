@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-10T13:27:11+00:00",
+  "guncelleme": "2026-11-11T12:42:09+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 38,
     "post": 9,
-    "tarih": "2026-11-10T13:27:11+00:00"
+    "tarih": "2026-11-11T12:42:09+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -28,11 +28,12 @@
     "2026-11-07": 32,
     "2026-11-08": 33,
     "2026-11-09": 36,
-    "2026-11-10": 38
+    "2026-11-10": 38,
+    "2026-11-11": 38
   },
   "haftalik": {
-    "baslangic": "2026-11-03",
-    "bitis": "2026-11-10",
+    "baslangic": "2026-11-04",
+    "bitis": "2026-11-11",
     "yeni_postlar": [
       "sina-tanitim"
     ],
@@ -43,9 +44,9 @@
     ],
     "takipci": {
       "simdi": 38,
-      "once": 26,
-      "once_tarih": "2026-11-03",
-      "degisim": 12
+      "once": 28,
+      "once_tarih": "2026-11-04",
+      "degisim": 10
     }
   },
   "postlar": {
@@ -253,8 +254,8 @@
       "notion_id": "3e89ef6b-7120-8188-9287-f78c889ae8ad",
       "baglanti": "https://www.instagram.com/p/Dee3wDTm-TJ/",
       "son": {
-        "reach": 66,
-        "views": 180,
+        "reach": 67,
+        "views": 183,
         "saved": 0,
         "shares": 1,
         "likes": 8,
@@ -262,7 +263,7 @@
         "total_interactions": 9,
         "profile_visits": 5,
         "follows": 1,
-        "tarih": "2026-11-10T13:27:11+00:00"
+        "tarih": "2026-11-11T12:42:09+00:00"
       },
       "g3": {
         "reach": 20,
@@ -301,8 +302,8 @@
       "notion_id": "3e29ef6b712081d69076fdafbb0ae620",
       "baglanti": "https://www.instagram.com/p/DeuUfiUFeW_/",
       "son": {
-        "reach": 148,
-        "views": 340,
+        "reach": 150,
+        "views": 349,
         "saved": 0,
         "shares": 2,
         "likes": 15,
@@ -310,7 +311,7 @@
         "total_interactions": 18,
         "profile_visits": 24,
         "follows": 3,
-        "tarih": "2026-11-10T13:27:11+00:00"
+        "tarih": "2026-11-11T12:42:09+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -349,8 +350,8 @@
       "notion_id": "3e89ef6b712081e09b18c920b98f8a46",
       "baglanti": "https://www.instagram.com/p/DezeHLnljI6/",
       "son": {
-        "reach": 64,
-        "views": 208,
+        "reach": 68,
+        "views": 218,
         "saved": 1,
         "shares": 0,
         "likes": 12,
@@ -358,7 +359,7 @@
         "total_interactions": 13,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-10T13:27:11+00:00"
+        "tarih": "2026-11-11T12:42:09+00:00"
       },
       "oran": {
         "kaydetme": 0.0161,
@@ -397,16 +398,16 @@
       "notion_id": "3e29ef6b712081a0a545d7537eb5c645",
       "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
       "son": {
-        "reach": 65,
-        "views": 198,
+        "reach": 69,
+        "views": 210,
         "saved": 0,
         "shares": 0,
         "likes": 5,
         "comments": 0,
         "total_interactions": 5,
-        "profile_visits": 5,
+        "profile_visits": 6,
         "follows": 0,
-        "tarih": "2026-11-10T13:27:11+00:00"
+        "tarih": "2026-11-11T12:42:09+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -445,19 +446,19 @@
       "notion_id": "40b9ef6b71208155b834f546fcaf7e56",
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
-        "reach": 1326,
-        "views": 1527,
+        "reach": 1331,
+        "views": 1540,
         "saved": 4,
         "shares": 2,
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-10T13:27:11+00:00"
+        "tarih": "2026-11-11T12:42:09+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
         "paylasma": 0.0015,
-        "etkilesim": 0.0196
+        "etkilesim": 0.0195
       },
       "g3": {
         "reach": 1326,
