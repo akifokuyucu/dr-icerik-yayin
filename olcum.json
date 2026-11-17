@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-16T13:37:16+00:00",
+  "guncelleme": "2026-11-17T14:22:00+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 42,
     "post": 9,
-    "tarih": "2026-11-16T13:37:16+00:00"
+    "tarih": "2026-11-17T14:22:00+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -34,18 +34,19 @@
     "2026-11-13": 38,
     "2026-11-14": 41,
     "2026-11-15": 41,
-    "2026-11-16": 42
+    "2026-11-16": 42,
+    "2026-11-17": 42
   },
   "haftalik": {
-    "baslangic": "2026-11-09",
-    "bitis": "2026-11-16",
+    "baslangic": "2026-11-10",
+    "bitis": "2026-11-17",
     "yeni_postlar": [],
     "kesinlesen": [],
     "takipci": {
       "simdi": 42,
-      "once": 36,
-      "once_tarih": "2026-11-09",
-      "degisim": 6
+      "once": 38,
+      "once_tarih": "2026-11-10",
+      "degisim": 4
     }
   },
   "postlar": {
@@ -302,7 +303,7 @@
       "baglanti": "https://www.instagram.com/p/DeuUfiUFeW_/",
       "son": {
         "reach": 157,
-        "views": 375,
+        "views": 376,
         "saved": 1,
         "shares": 2,
         "likes": 15,
@@ -310,7 +311,7 @@
         "total_interactions": 19,
         "profile_visits": 24,
         "follows": 3,
-        "tarih": "2026-11-16T13:37:16+00:00"
+        "tarih": "2026-11-17T14:22:00+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -350,7 +351,7 @@
       "baglanti": "https://www.instagram.com/p/DezeHLnljI6/",
       "son": {
         "reach": 77,
-        "views": 240,
+        "views": 242,
         "saved": 1,
         "shares": 0,
         "likes": 12,
@@ -358,7 +359,7 @@
         "total_interactions": 13,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-16T13:37:16+00:00"
+        "tarih": "2026-11-17T14:22:00+00:00"
       },
       "oran": {
         "kaydetme": 0.0161,
@@ -398,7 +399,7 @@
       "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
       "son": {
         "reach": 81,
-        "views": 243,
+        "views": 245,
         "saved": 0,
         "shares": 0,
         "likes": 5,
@@ -406,7 +407,7 @@
         "total_interactions": 5,
         "profile_visits": 6,
         "follows": 0,
-        "tarih": "2026-11-16T13:37:16+00:00"
+        "tarih": "2026-11-17T14:22:00+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -446,13 +447,13 @@
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
         "reach": 1341,
-        "views": 1561,
+        "views": 1562,
         "saved": 4,
         "shares": 2,
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-16T13:37:16+00:00"
+        "tarih": "2026-11-17T14:22:00+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
