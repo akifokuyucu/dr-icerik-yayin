@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-17T14:22:00+00:00",
+  "guncelleme": "2026-11-18T13:55:40+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 42,
     "post": 9,
-    "tarih": "2026-11-17T14:22:00+00:00"
+    "tarih": "2026-11-18T13:55:40+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -35,17 +35,18 @@
     "2026-11-14": 41,
     "2026-11-15": 41,
     "2026-11-16": 42,
-    "2026-11-17": 42
+    "2026-11-17": 42,
+    "2026-11-18": 42
   },
   "haftalik": {
-    "baslangic": "2026-11-10",
-    "bitis": "2026-11-17",
+    "baslangic": "2026-11-11",
+    "bitis": "2026-11-18",
     "yeni_postlar": [],
     "kesinlesen": [],
     "takipci": {
       "simdi": 42,
       "once": 38,
-      "once_tarih": "2026-11-10",
+      "once_tarih": "2026-11-11",
       "degisim": 4
     }
   },
@@ -311,7 +312,7 @@
         "total_interactions": 19,
         "profile_visits": 24,
         "follows": 3,
-        "tarih": "2026-11-17T14:22:00+00:00"
+        "tarih": "2026-11-18T13:55:40+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -359,7 +360,7 @@
         "total_interactions": 13,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-17T14:22:00+00:00"
+        "tarih": "2026-11-18T13:55:40+00:00"
       },
       "oran": {
         "kaydetme": 0.0161,
@@ -407,7 +408,7 @@
         "total_interactions": 5,
         "profile_visits": 6,
         "follows": 0,
-        "tarih": "2026-11-17T14:22:00+00:00"
+        "tarih": "2026-11-18T13:55:40+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -453,7 +454,7 @@
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-17T14:22:00+00:00"
+        "tarih": "2026-11-18T13:55:40+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
