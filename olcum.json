@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-20T13:59:14+00:00",
+  "guncelleme": "2026-11-21T13:26:58+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 41,
     "post": 9,
-    "tarih": "2026-11-20T13:59:14+00:00"
+    "tarih": "2026-11-21T13:26:58+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -38,18 +38,21 @@
     "2026-11-17": 42,
     "2026-11-18": 42,
     "2026-11-19": 42,
-    "2026-11-20": 41
+    "2026-11-20": 41,
+    "2026-11-21": 41
   },
   "haftalik": {
-    "baslangic": "2026-11-13",
-    "bitis": "2026-11-20",
+    "baslangic": "2026-11-14",
+    "bitis": "2026-11-21",
     "yeni_postlar": [],
-    "kesinlesen": [],
+    "kesinlesen": [
+      "sina-tanitim"
+    ],
     "takipci": {
       "simdi": 41,
-      "once": 38,
-      "once_tarih": "2026-11-13",
-      "degisim": 3
+      "once": 41,
+      "once_tarih": "2026-11-14",
+      "degisim": 0
     }
   },
   "postlar": {
@@ -354,7 +357,7 @@
       "baglanti": "https://www.instagram.com/p/DezeHLnljI6/",
       "son": {
         "reach": 77,
-        "views": 245,
+        "views": 246,
         "saved": 1,
         "shares": 0,
         "likes": 12,
@@ -362,7 +365,7 @@
         "total_interactions": 13,
         "profile_visits": 4,
         "follows": 0,
-        "tarih": "2026-11-20T13:59:14+00:00"
+        "tarih": "2026-11-21T13:26:58+00:00"
       },
       "oran": {
         "kaydetme": 0.0161,
@@ -402,7 +405,7 @@
       "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
       "son": {
         "reach": 82,
-        "views": 250,
+        "views": 251,
         "saved": 0,
         "shares": 0,
         "likes": 5,
@@ -410,7 +413,7 @@
         "total_interactions": 5,
         "profile_visits": 6,
         "follows": 0,
-        "tarih": "2026-11-20T13:59:14+00:00"
+        "tarih": "2026-11-21T13:26:58+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -450,13 +453,13 @@
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
         "reach": 1343,
-        "views": 1566,
+        "views": 1567,
         "saved": 4,
         "shares": 2,
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-20T13:59:14+00:00"
+        "tarih": "2026-11-21T13:26:58+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
@@ -472,6 +475,16 @@
         "comments": 0,
         "total_interactions": 26,
         "tarih": "2026-11-10T13:27:11+00:00"
+      },
+      "g14": {
+        "reach": 1343,
+        "views": 1567,
+        "saved": 4,
+        "shares": 2,
+        "likes": 20,
+        "comments": 0,
+        "total_interactions": 26,
+        "tarih": "2026-11-21T13:26:58+00:00"
       }
     }
   }
