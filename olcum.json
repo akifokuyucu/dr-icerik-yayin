@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-21T13:26:58+00:00",
+  "guncelleme": "2026-11-22T13:19:32+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 41,
     "post": 9,
-    "tarih": "2026-11-21T13:26:58+00:00"
+    "tarih": "2026-11-22T13:19:32+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -39,11 +39,12 @@
     "2026-11-18": 42,
     "2026-11-19": 42,
     "2026-11-20": 41,
-    "2026-11-21": 41
+    "2026-11-21": 41,
+    "2026-11-22": 41
   },
   "haftalik": {
-    "baslangic": "2026-11-14",
-    "bitis": "2026-11-21",
+    "baslangic": "2026-11-15",
+    "bitis": "2026-11-22",
     "yeni_postlar": [],
     "kesinlesen": [
       "sina-tanitim"
@@ -51,7 +52,7 @@
     "takipci": {
       "simdi": 41,
       "once": 41,
-      "once_tarih": "2026-11-14",
+      "once_tarih": "2026-11-15",
       "degisim": 0
     }
   },
@@ -404,8 +405,8 @@
       "notion_id": "3e29ef6b712081a0a545d7537eb5c645",
       "baglanti": "https://www.instagram.com/p/De4nqrVltXD/",
       "son": {
-        "reach": 82,
-        "views": 251,
+        "reach": 83,
+        "views": 253,
         "saved": 0,
         "shares": 0,
         "likes": 5,
@@ -413,7 +414,7 @@
         "total_interactions": 5,
         "profile_visits": 6,
         "follows": 0,
-        "tarih": "2026-11-21T13:26:58+00:00"
+        "tarih": "2026-11-22T13:19:32+00:00"
       },
       "oran": {
         "kaydetme": 0.0,
@@ -453,13 +454,13 @@
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
         "reach": 1343,
-        "views": 1567,
+        "views": 1570,
         "saved": 4,
         "shares": 2,
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-21T13:26:58+00:00"
+        "tarih": "2026-11-22T13:19:32+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
