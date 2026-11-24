@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-23T15:56:22+00:00",
+  "guncelleme": "2026-11-24T15:51:32+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
-    "takipci": 41,
+    "takipci": 42,
     "post": 9,
-    "tarih": "2026-11-23T15:56:22+00:00"
+    "tarih": "2026-11-24T15:51:32+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -41,20 +41,21 @@
     "2026-11-20": 41,
     "2026-11-21": 41,
     "2026-11-22": 41,
-    "2026-11-23": 41
+    "2026-11-23": 41,
+    "2026-11-24": 42
   },
   "haftalik": {
-    "baslangic": "2026-11-16",
-    "bitis": "2026-11-23",
+    "baslangic": "2026-11-17",
+    "bitis": "2026-11-24",
     "yeni_postlar": [],
     "kesinlesen": [
       "sina-tanitim"
     ],
     "takipci": {
-      "simdi": 41,
+      "simdi": 42,
       "once": 42,
-      "once_tarih": "2026-11-16",
-      "degisim": -1
+      "once_tarih": "2026-11-17",
+      "degisim": 0
     }
   },
   "postlar": {
@@ -454,14 +455,14 @@
       "notion_id": "40b9ef6b71208155b834f546fcaf7e56",
       "baglanti": "https://www.instagram.com/reel/DfaHLvagGVf/",
       "son": {
-        "reach": 1345,
-        "views": 1572,
+        "reach": 1347,
+        "views": 1576,
         "saved": 4,
         "shares": 2,
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-23T15:56:22+00:00"
+        "tarih": "2026-11-24T15:51:32+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
