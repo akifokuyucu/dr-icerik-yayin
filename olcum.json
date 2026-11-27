@@ -1,10 +1,10 @@
 {
-  "guncelleme": "2026-11-26T15:11:08+00:00",
+  "guncelleme": "2026-11-27T15:02:58+00:00",
   "hesap": {
     "kullanici": "dr.ahmetakif",
     "takipci": 42,
     "post": 9,
-    "tarih": "2026-11-26T15:11:08+00:00"
+    "tarih": "2026-11-27T15:02:58+00:00"
   },
   "takipci_gecmis": {
     "2026-10-20": 16,
@@ -44,20 +44,21 @@
     "2026-11-23": 41,
     "2026-11-24": 42,
     "2026-11-25": 42,
-    "2026-11-26": 42
+    "2026-11-26": 42,
+    "2026-11-27": 42
   },
   "haftalik": {
-    "baslangic": "2026-11-19",
-    "bitis": "2026-11-26",
+    "baslangic": "2026-11-20",
+    "bitis": "2026-11-27",
     "yeni_postlar": [],
     "kesinlesen": [
       "sina-tanitim"
     ],
     "takipci": {
       "simdi": 42,
-      "once": 42,
-      "once_tarih": "2026-11-19",
-      "degisim": 0
+      "once": 41,
+      "once_tarih": "2026-11-20",
+      "degisim": 1
     }
   },
   "postlar": {
@@ -464,7 +465,7 @@
         "likes": 20,
         "comments": 0,
         "total_interactions": 26,
-        "tarih": "2026-11-26T15:11:08+00:00"
+        "tarih": "2026-11-27T15:02:58+00:00"
       },
       "oran": {
         "kaydetme": 0.003,
